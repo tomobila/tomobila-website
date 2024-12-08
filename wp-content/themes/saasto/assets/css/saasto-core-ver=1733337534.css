@@ -8618,9 +8618,9 @@ Testimonial End - Homepage Six
   background: transparent;
   color: var(--c-blue-2);
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 900;
   line-height: 163.636%;
-  letter-spacing: 5.28px;
+  /* letter-spacing: 5.28px; */
 }
 
 .section-header.header-eight .sub-title {
