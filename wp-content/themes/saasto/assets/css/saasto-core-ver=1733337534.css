@@ -86,7 +86,7 @@ Last update : 04/19/2022
   --c-black: #061e21;
   --c-black-2: #061d21;
   --c-black-3: #0e0d13;
-  --c-black-4: #0B111D;
+  --c-black-4: #041370;
   --c-blue: #573bff;
   --c-blue-2: #122ec0;
   --c-blue-3: #194BFB;
@@ -9743,7 +9743,7 @@ a.fill-out>span svg:nth-child(1) {
 
 /* faq-eight-area start  */
 .faq-area-eight .section-header .support {
-  color: #0B111D;
+  color: #041370;
   font-family: var(--secondary-font);
   font-size: 18px;
   font-style: normal;
@@ -9790,7 +9790,7 @@ a.fill-out>span svg:nth-child(1) {
 .faq-eight .accordion-item .accordion-button {
   padding: 0;
   padding-bottom: 32px;
-  color: #0B111D;
+  color: #041370;
   background-color: transparent;
   font-family: var(--secondary-font);
   font-size: 22px;
@@ -9848,7 +9848,7 @@ a.fill-out>span svg:nth-child(1) {
 }
 
 .product-counter-box .countdown-info {
-  color: #0B111D;
+  color: #041370;
   text-align: center;
   font-family: var(--secondary-font);
   font-size: 56px;
@@ -10178,7 +10178,7 @@ a.fill-out>span svg:nth-child(1) {
 
 .testimonial-nine-card .testimonial-content>p {
   padding-top: 20px;
-  color: #0B111D;
+  color: #041370;
   font-family: var(--secondary-font);
   font-size: 20px;
   font-style: normal;
@@ -10219,7 +10219,7 @@ a.fill-out>span svg:nth-child(1) {
 }
 
 .testimonial-nine-card .testimonial-author .author-info .author-title {
-  color: #0B111D;
+  color: #041370;
   font-family: var(--secondary-font);
   font-size: 22px;
   font-style: normal;
@@ -10522,7 +10522,7 @@ a.fill-out>span svg:nth-child(1) {
 }
 
 .task-section-title .task-title {
-  color: #0B111D;
+  color: #041370;
   font-family: var(--secondary-font);
   font-size: 48px;
   font-style: normal;
@@ -10563,7 +10563,7 @@ a.fill-out>span svg:nth-child(1) {
 }
 
 .task-countdown-wrap .task-countdown-box .countdown-info {
-  color: #0B111D;
+  color: #041370;
   font-family: var(--secondary-font);
   font-size: 72px;
   font-weight: 500;
@@ -10622,7 +10622,7 @@ a.fill-out>span svg:nth-child(1) {
 
 .task-price-box .task-price-info .task-price-tag {
   margin-top: 20px;
-  color: #0B111D;
+  color: #041370;
   font-family: var(--secondary-font);
   font-size: 52px;
   font-weight: 600;
@@ -10852,7 +10852,7 @@ header .header-area.header-five .main-nav ul li.has-child-menu:after {
 
 .header-wd {
   border-radius: 53.5px;
-  background: #0B111D;
+  background: #041370;
   padding: 0 22px;
 }
 
@@ -10914,14 +10914,16 @@ header .header-area.header-elementor #menu-main-menu {
 .anim-img-box .anim-img-kit {
   animation: anima-trasform-y-one 3s ease infinite alternate;
 }
-.cta-form + .wpcf7-response-output{
+
+.cta-form+.wpcf7-response-output {
   color: #fff;
 }
-.cta-form .wpcf7-not-valid-tip{
+
+.cta-form .wpcf7-not-valid-tip {
   position: absolute;
 }
 
-.download-btn-outlined svg{
-    width: 20px;
-    margin-right: 10px;
+.download-btn-outlined svg {
+  width: 20px;
+  margin-right: 10px;
 }
