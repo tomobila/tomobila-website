@@ -5245,7 +5245,7 @@ fieldset:disabled .btn {
 
 .btn-tertiary {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #025864;
+    --bs-btn-bg: #2448ef;
     --bs-btn-border-color: #025864;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #024b55;
@@ -7999,7 +7999,7 @@ textarea.form-control-lg {
 
 .bg-primary-300 {
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-primary-300-rgb), var(--bs-bg-opacity)) !important
+    background-color: #9eceff !important;
 }
 
 .bg-primary-400 {
