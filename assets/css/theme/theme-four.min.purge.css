@@ -5017,8 +5017,8 @@ progress {
 }
 
 .btn:hover {
-    color: var(--bs-btn-hover-color);
-    background-color: var(--bs-btn-hover-bg);
+    color: #ffffff;
+    background-color: #1e87f0;
     border-color: var(--bs-btn-hover-border-color)
 }
 
