@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fleetee - Votre flotte, maîtrisée en un clic.</title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+    <meta
+      name="description"
+      content="Gérez vos réservations grâce à un planning interactif"
+    />
+    <link rel="stylesheet" href="./assets/css/unicons.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/prettify.min.css" />
+    <link rel="stylesheet" href="./assets/css/magic-cursor.min.css" />
+    <link rel="stylesheet" href="./assets/css/theme/theme-four.min.purge.css" />
+  </head>
+  <body
+    class="uni-body panel bg-white text-tertiary-900 dark:bg-tertiary-800 dark:text-tertiary-200 overflow-x-hidden"
+  >
+    <main class="panel">
+      <section class="panel min-h-100vh d-flex items-center py-8">
+        <div class="container">
+          <div class="row g-4 items-center">
+            <div class="col-12 col-lg-6">
+              <div class="vstack gap-4">
+                <img
+                  src="./assets/images/logo.png"
+                  alt="Fleetee"
+                  class="w-150px"
+                />
+                <h1 class="h2 ft-primary fw-bold -ls-1"
+                  >Vous êtes : <br />Loueur de véhicules depuis moins d'un an
+                  ?</h1
+                >
+                <div class="vstack gap-3">
+                  <div class="hstack gap-2">
+                    <i class="unicon-check-circle text-primary"></i>
+                    <p class="m-0"
+                      >Gérez vos réservations grâce à
+                      <span class="text-primary"
+                        >un planning interactif</span
+                      ></p
+                    >
+                  </div>
+                  <div class="hstack gap-2">
+                    <i class="unicon-check-circle text-primary"></i>
+                    <p class="m-0"
+                      >Suivez l'évolution des entretiens avec
+                      <span class="text-primary"
+                        >un tableau de bord dédié</span
+                      ></p
+                    >
+                  </div>
+                  <div class="hstack gap-2">
+                    <i class="unicon-check-circle text-primary"></i>
+                    <p class="m-0"
+                      >Réalisez
+                      <span class="text-primary"
+                        >vos états des lieux depuis votre smartphone</span
+                      ></p
+                    >
+                  </div>
+                  <div class="hstack gap-2">
+                    <i class="unicon-check-circle text-primary"></i>
+                    <p class="m-0"
+                      >Votre
+                      <span class="text-primary"
+                        >site internet avec module de réservation</span
+                      >
+                      intégré</p
+                    >
+                  </div>
+                  <p class="m-0">Et bien plus...</p>
+                </div>
+                <p class="fs-7 text-gray-500"
+                  >* Offre réservée aux entreprises de location créées il y a
+                  moins d'un an.</p
+                >
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="card shadow-lg rounded-4 p-4">
+                <div class="card-body">
+                  <h2 class="h4 ft-primary fw-bold -ls-1 mb-4"
+                    >Profitez de l'Offre Starter en remplissant le formulaire
+                    !</h2
+                  >
+                  <form class="vstack gap-3" id="contactForm">
+                    <div class="row g-3">
+                      <div class="col-6">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Prénom"
+                          required
+                        />
+                      </div>
+                      <div class="col-6">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Nom"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="E-mail"
+                      required
+                    />
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Entreprise"
+                      required
+                    />
+                    <div class="input-group">
+                      <select class="form-select w-auto" defaultValue="Maroc">
+                        <option value="Maroc">Maroc</option>
+                      </select>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        placeholder="+212"
+                        required
+                      />
+                    </div>
+                    <select class="form-select" required>
+                      <option value="" selected disabled>Taille du parc</option>
+                      <option value="1-5">1-5 véhicules</option>
+                      <option value="6-10">6-10 véhicules</option>
+                      <option value="11+">11+ véhicules</option>
+                    </select>
+                    <div class="form-group">
+                      <label class="form-label"
+                        >Date de création de l'entreprise</label
+                      >
+                      <input type="date" class="form-control" required />
+                      <small class="text-muted"
+                        >Si l'entreprise est en création, veuillez laisser ce
+                        champ vide.</small
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="newsletter"
+                      />
+                      <label class="form-check-label" for="newsletter"
+                        >J'accepte de recevoir par e-mail les offres exclusives
+                        et nouveautés de Fleetee</label
+                      >
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-primary w-100"
+                      >Envoyer</button
+                    >
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/libs/jquery.min.js"></script>
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
