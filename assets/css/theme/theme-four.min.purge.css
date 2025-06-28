@@ -10431,3 +10431,9 @@ textarea.form-control-lg {
     --uc-gradient-from: #012328;
     --uc-gradient-stops: var(--uc-gradient-from), var(--uc-gradient-to)
 }
+
+
+.nice-bg {
+    background-image: radial-gradient(circle farthest-corner at 50% 0%, #5b7fff33, #151466 65%);
+    background-color: #635bff !important;
+}
