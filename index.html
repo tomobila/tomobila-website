@@ -532,7 +532,7 @@
     </div>
 
     <!-- Header start -->
-    <header
+    <!-- <header
       class="uc-header header-eight uc-navbar-sticky-wrap z-999 uc-dark"
       data-uc-sticky="start: 100vh; show-on-up: true; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;"
     >
@@ -1297,11 +1297,11 @@
                       </div>
                     </div>
                   </li>
-                  <!-- <li>
+                  <li>
                     <a href="blog-sidebar.html">Insights</a>
-                  </li> -->
+                  </li>
                   <li><a href="pricing.html">Pricing</a></li>
-                  <!-- <li><a href="components.html">About</a></li> -->
+                  <li><a href="components.html">About</a></li>
                 </ul>
               </div>
               <div class="uc-navbar-right">
@@ -1346,8 +1346,167 @@
           </div>
         </div>
       </nav>
+    </header> -->
+    <header
+      class="uc-header header-global text-white uc-navbar-sticky-wrap z-999"
+    >
+      <nav
+        class="uc-navbar-container uc-navbar-transparent uc-navbar-float ft-tertiary z-1"
+        data-anime="translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 750; delay: 0;"
+        style="transform: translateY(0px); opacity: 1"
+      >
+        <div class="uc-navbar-main">
+          <div class="container max-w-lg lg:max-w-950px xl:max-w-xl">
+            <div
+              class="uc-navbar min-h-56px lg:min-h-100px px-2 lg:px-0 text-gray-900 dark:text-white"
+              data-uc-navbar=" animation: uc-animation-slide-top-small; duration: 150;"
+            >
+              <div class="uc-navbar-left">
+                <div class="uc-logo">
+                  <a class="panel text-none" href="/" style="width: 140px">
+                    <img
+                      class="text-primary dark:text-tertiary"
+                      src="./assets/images/logo.png"
+                      alt="Lexend"
+                      data-uc-svg=""
+                      width="300"
+                    />
+                    <!-- <svg
+                      width="148"
+                      height="39"
+                      viewBox="0 0 148 39"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="text-primary dark:text-tertiary uc-svg"
+                    >
+                      <path
+                        d="M18.79 20.71v-.5H5.29v-.941c6.379-1.58 11.4-6.6 12.979-12.98h.942v13.5h13.5v.942a17.82 17.82 0 00-12.98 12.98h-.942v-13zM1 15H.5v10H14v13.5h10V38c0-7.18 5.82-13 13-13h.5V15H24V1.5H14V2c0 7.18-5.82 13-13 13z"
+                        fill="#93E85F"
+                        stroke="#93E85F"
+                      ></path>
+                      <path
+                        d="M50.616 8.96c1.856 0 3.2.043 4.032.128.832.064 1.43.224 1.792.48.384.256.576.672.576 1.248 0 .47-.096 1.088-.288 1.856l-2.976 12.8c-.192.917-.288 1.472-.288 1.664 0 .341.107.555.32.64.235.085.693.128 1.376.128h1.152L55.448 32h-3.712c-1.365 0-2.336-.181-2.912-.544-.576-.363-.864-1.035-.864-2.016 0-.597.096-1.323.288-2.176l2.912-12.48c.15-.64.224-1.035.224-1.184 0-.256-.107-.405-.32-.448-.192-.064-.63-.096-1.312-.096l.864-4.096zm6.115 14.592a10.59 10.59 0 011.952-4.576 10.592 10.592 0 013.904-3.2c1.6-.79 3.37-1.184 5.312-1.184 1.152 0 2.197.192 3.136.576.96.363 1.717.875 2.272 1.536.576.64.864 1.376.864 2.208 0 .15-.022.352-.064.608-.342 1.941-1.664 3.381-3.968 4.32-2.304.917-5.227 1.376-8.768 1.376.042 2.133 1.194 3.2 3.456 3.2.832 0 1.61-.224 2.336-.672.746-.448 1.258-.992 1.536-1.632h4.992c-.448 1.195-1.152 2.283-2.112 3.264a10.803 10.803 0 01-3.328 2.304 9.958 9.958 0 01-4 .832c-2.582 0-4.512-.63-5.792-1.888-1.28-1.259-1.92-2.933-1.92-5.024 0-.661.064-1.344.192-2.048zm5.12-1.408c2.304 0 4.021-.16 5.152-.48 1.13-.341 1.77-.96 1.92-1.856.064-.427-.086-.779-.448-1.056-.363-.299-.843-.448-1.44-.448-1.366 0-2.486.384-3.36 1.152a6.238 6.238 0 00-1.824 2.688zm13.297-7.04h5.76l1.408 4.192c.106.32.16.608.16.864 0 .107-.022.267-.064.48l-.032.224c0 .299.138.448.416.448.341 0 .554-.224.64-.672.128-.47.352-.917.672-1.344l3.2-4.192h5.76l-7.2 8.064L89.996 32h-5.76l-1.76-4.992a2.224 2.224 0 01-.16-.8c0-.15.021-.33.064-.544l.032-.256c0-.277-.139-.416-.416-.416-.192 0-.33.064-.416.192a1.44 1.44 0 00-.224.48c-.192.576-.416 1.024-.672 1.344L76.812 32h-5.76l7.904-8.832-3.808-8.064zm15.864 8.448c.299-1.707.95-3.232 1.952-4.576a10.592 10.592 0 013.904-3.2c1.6-.79 3.371-1.184 5.312-1.184 1.152 0 2.197.192 3.136.576.96.363 1.717.875 2.272 1.536.576.64.864 1.376.864 2.208 0 .15-.021.352-.064.608-.341 1.941-1.664 3.381-3.968 4.32-2.304.917-5.227 1.376-8.768 1.376.043 2.133 1.195 3.2 3.456 3.2.832 0 1.611-.224 2.336-.672.747-.448 1.259-.992 1.536-1.632h4.992c-.448 1.195-1.152 2.283-2.112 3.264a10.806 10.806 0 01-3.328 2.304 9.957 9.957 0 01-4 .832c-2.581 0-4.512-.63-5.792-1.888-1.28-1.259-1.92-2.933-1.92-5.024 0-.661.064-1.344.192-2.048zm5.12-1.408c2.304 0 4.021-.16 5.152-.48 1.131-.341 1.771-.96 1.92-1.856.064-.427-.085-.779-.448-1.056-.363-.299-.843-.448-1.44-.448-1.365 0-2.485.384-3.36 1.152a6.24 6.24 0 00-1.824 2.688zm20.222-7.04l-.608 2.912c-.106.512-.341 1.067-.704 1.664-.362.597-.576.96-.64 1.088a.796.796 0 00-.096.352c0 .15.064.245.192.288a.467.467 0 00.448-.064.617.617 0 00.16-.224c.982-1.792 2.208-3.328 3.68-4.608 1.494-1.28 3.051-1.92 4.672-1.92 1.195 0 2.038.256 2.528.768.512.49.768 1.28.768 2.368 0 .96-.213 2.475-.64 4.544L124.034 32h-5.12l1.824-8.576c.363-1.621.544-2.752.544-3.392 0-.427-.085-.736-.256-.928-.149-.192-.405-.288-.768-.288-.597 0-1.397.63-2.4 1.888-1.002 1.237-1.952 2.741-2.848 4.512-.896 1.75-1.504 3.339-1.824 4.768L112.77 32h-5.12l3.584-16.896h5.12zm10.906 8.832a13.324 13.324 0 011.984-4.672c.96-1.43 2.133-2.56 3.52-3.392 1.386-.853 2.858-1.28 4.416-1.28.938 0 1.685.203 2.24.608a5.332 5.332 0 011.472 1.6c.106.15.202.256.288.32.085.064.202.064.352 0 .192-.107.288-.245.288-.416 0-.064-.022-.16-.064-.288-.214-.47-.32-.821-.32-1.056 0-.085.021-.256.064-.512l1.248-5.888h5.12l-3.2 15.104a72.352 72.352 0 00-.736 3.712c-.15.896-.224 1.664-.224 2.304 0 .661.096 1.301.288 1.92h-5.184a4.594 4.594 0 01-.16-1.088c0-.555.096-1.067.288-1.536.192-.49.458-1.013.8-1.568a6.2 6.2 0 00.352-.576.755.755 0 00.096-.32c0-.128-.064-.224-.192-.288-.022-.021-.075-.032-.16-.032a.57.57 0 00-.288.096.284.284 0 00-.16.192c-2.07 3.755-4.523 5.632-7.36 5.632-1.472 0-2.678-.555-3.616-1.664-.939-1.11-1.408-2.592-1.408-4.448 0-.875.085-1.696.256-2.464zm5.088.192c-.107.576-.16 1.045-.16 1.408 0 .853.192 1.504.576 1.952.405.448.928.672 1.568.672.81 0 1.61-.31 2.4-.928.789-.619 1.493-1.493 2.112-2.624.618-1.152 1.088-2.464 1.408-3.936-.427-.64-.854-1.088-1.28-1.344-.427-.256-.982-.384-1.664-.384-1.238 0-2.294.47-3.168 1.408-.854.917-1.451 2.176-1.792 3.776z"
+                        fill="#000"
+                      ></path>
+                    </svg> -->
+                  </a>
+                </div>
+              </div>
+              <div class="uc-navbar-center d-none xl:d-flex text-white">
+                <ul
+                  class="uc-navbar-nav gap-4 xl:gap-5 d-none lg:d-flex fs-5 fw-bold"
+                  style="--uc-nav-height: 48px"
+                  data-uc-scrollspy-nav="closest: li; offset: 40; scroll: true"
+                >
+                  <li>
+                    <a href="/html/lexend/main/page-features">Features</a>
+                  </li>
+                  <li>
+                    <a href="/html/lexend/main/page-pricing-2">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="page-blog.html">Blog</a>
+                  </li>
+                  <li>
+                    <a href="/html/lexend/main/page-about">About</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="uc-navbar-right">
+                <div class="d-inline-block">
+                  <a
+                    href="#"
+                    class="hstack gap-1 text-none fw-medium"
+                    role="button"
+                    aria-haspopup="true"
+                  >
+                    <i class="icon icon-1 unicon-wikis fw-bold"></i>
+                  </a>
+                  <div
+                    class="p-2 bg-white dark:bg-gray-300 dark:bg-opacity-15 border shadow-xs rounded w-100px uc-drop"
+                    data-uc-drop="mode: click; offset: 16; pos: bottom-right; boundary: !.uc-footer-widgets; animation: uc-animation-slide-top-small; duration: 150;"
+                    style="max-width: 1460px; top: 76px; left: 967.406px"
+                  >
+                    <ul
+                      class="nav-y items-center gap-1 fw-medium rtl:items-end"
+                    >
+                      <li><a href="/en">English</a></li>
+                      <li><a href="/ar">العربية</a></li>
+                      <!-- <li><a href="#ch">中文</a></li> -->
+                    </ul>
+                  </div>
+                </div>
+                <a
+                  href="https://themeforest.net/item/lexend-software-saas-startup-html5-template/51596504"
+                  target="_blank"
+                  class="btn btn-md btn-primary dark:bg-tertiary dark:text-primary-700 border-0 px-3 d-none lg:d-inline-flex"
+                  data-uc-cursor="lg opaque"
+                >
+                  <span>Download App</span>
+                </a>
+                <a
+                  class="d-block lg:d-none uc-icon uc-navbar-toggle-icon"
+                  href="#uc-menu-panel"
+                  data-uc-navbar-toggle-icon=""
+                  data-uc-toggle=""
+                  role="button"
+                  aria-label="Open menu"
+                  ><svg width="20" height="20" viewBox="0 0 20 20">
+                    <style>
+                      .uc-navbar-toggle-icon svg&gt;
+                      [class*="line-"] {
+                        transition: 0.2s ease-in-out;
+                        transition-property: transform, opacity;
+                        transform-origin: center;
+                        opacity: 1;
+                      }
+                      .uc-navbar-toggle-icon svg&gt;
+                      .line-3 {
+                        opacity: 0;
+                      }
+                      .uc-navbar-toggle-animate[aria-expanded="true"] svg&gt;
+                      .line-3 {
+                        opacity: 1;
+                      }
+                      .uc-navbar-toggle-animate[aria-expanded="true"] svg&gt;
+                      .line-2 {
+                        transform: rotate(45deg);
+                      }
+                      .uc-navbar-toggle-animate[aria-expanded="true"] svg&gt;
+                      .line-3 {
+                        transform: rotate(-45deg);
+                      }
+                      .uc-navbar-toggle-animate[aria-expanded="true"] svg&gt;
+                      .line-1,
+                      .uc-navbar-toggle-animate[aria-expanded="true"] svg&gt;
+                      .line-4 {
+                        opacity: 0;
+                      }
+                      .uc-navbar-toggle-animate[aria-expanded="true"] svg&gt;
+                      .line-1 {
+                        transform: translateY(6px) scaleX(0);
+                      }
+                      .uc-navbar-toggle-animate[aria-expanded="true"] svg&gt;
+                      .line-4 {
+                        transform: translateY(-6px) scaleX(0);
+                      }
+                    </style>
+                    <rect class="line-1" y="3" width="20" height="2"></rect>
+                    <rect class="line-2" y="9" width="20" height="2"></rect>
+                    <rect class="line-3" y="9" width="20" height="2"></rect>
+                    <rect
+                      class="line-4"
+                      y="15"
+                      width="20"
+                      height="2"
+                    ></rect></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-
     <!-- Header end -->
 
     <!-- Wrapper start -->
@@ -1551,9 +1710,9 @@
                 class="panel vstack items-center gap-2 xl:gap-3 mb-4 sm:mb-6 lg:mb-8 max-w-650px mx-auto text-center"
                 data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
               >
-                <span class="fs-7 fw-medium py-narrow px-2 border rounded-pill">
+                <!-- <span class="fs-7 fw-medium py-narrow px-2 border rounded-pill">
                   Caractéristiques
-                </span>
+                </span> -->
                 <h2 class="h3 lg:h2 m-0">
                   Une plateforme
                   <span class="text-tertiary dark:text-primary">
@@ -1622,7 +1781,7 @@
                   <div
                     class="nice-bg panel overflow-hidden bg-secondary text-white dark:bg-tertiary-700 dark:text-white rounded-2 lg:rounded-2"
                   >
-                    <div class="panel p-0 pb-0">
+                    <div class="panel p-4 pt-0 pb-0">
                       <img
                         class="rounded-1-5"
                         src="https://cdn.prod.website-files.com/5f0fa4521806fc7695679c1c/6722e504180624ae5c0aff7f_Frame%20626174%20(1).avif"
@@ -1666,7 +1825,7 @@
                         تجارية كاملة وتعكس علامتك التجارية.
                       </p>
                     </div>
-                    <div class="panel p-4 pb-0">
+                    <div class="panel pb-0 p-6 pt-0" style="max-height: 580px">
                       <img
                         class="rounded-1-5"
                         src="https://cdn.prod.website-files.com/5f0fa4521806fc7695679c1c/6735294e4114b701a4f43293_Loopit%202%E2%80%94microsite%20and%20search%20results.avif"
@@ -1705,7 +1864,7 @@
                     >
                       <img
                         class="w-24px xl:w-32px"
-                        src="./assets/images/custom-icons/home-8-icon-01.svg"
+                        src="https://cdn.prod.website-files.com/5f0fa4521806fc7695679c1c/6722f3b6673e71d936875812_verified_user_24dp_151466.svg"
                         alt="feature-icon"
                       />
                     </div>
