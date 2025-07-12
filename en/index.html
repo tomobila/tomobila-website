@@ -913,7 +913,7 @@ Save time, avoid forgetting.
     </div>
     <!-- Section end -->
 
-    <!-- Section start -->
+    <!-- CTA Section start -->
     <div id="cta" class="cta section panel overflow-hidden">
       <div class="section-outer panel py-6 xl:py-9">
         <div class="container max-w-lg">
@@ -936,7 +936,7 @@ Save time, avoid forgetting.
               <div class="panel">
                 <a
                   class="btn btn-md lg:btn-lg btn-primary text-white"
-                  href="#"
+                  href="#contact"
                 >
                   Start Your Trial
                 </a>
@@ -946,7 +946,141 @@ Save time, avoid forgetting.
         </div>
       </div>
     </div>
-    <!-- Section end -->
+    <!-- CTA Section end -->
+
+    <!-- Contact Form Section start -->
+    <div id="contact" class="contact section panel overflow-hidden bg-secondary dark:bg-gray-800">
+      <div class="section-outer panel py-6 xl:py-9">
+        <div class="container max-w-lg">
+          <div class="section-inner panel">
+            <div class="row child-cols-12 lg:child-cols-6 col-match g-4 lg:g-6">
+              <!-- Contact Info -->
+              <div>
+                <div class="panel vstack gap-4 lg:gap-6">
+                  <div class="panel vstack gap-2">
+                    <h2 class="h4 lg:h3 m-0">
+                      Get in touch with
+                      <span class="text-tertiary dark:text-primary">
+                        our team
+                      </span>
+                    </h2>
+                    <p class="fs-6 lg:fs-5 opacity-70 dark:opacity-80">
+                      Ready to transform your fleet management? Contact us today and discover how Tomobila can streamline your operations.
+                    </p>
+                  </div>
+                  <div class="panel vstack gap-3">
+                    <div class="panel hstack gap-3 items-center">
+                      <div class="panel w-48px h-48px rounded-circle bg-primary text-white d-flex items-center justify-center">
+                        <i class="icon icon-1 unicon-envelope"></i>
+                      </div>
+                      <div class="panel">
+                        <h6 class="h6 m-0">Email us</h6>
+                        <p class="fs-7 opacity-70 m-0">contact@tomobila.com</p>
+                      </div>
+                    </div>
+                    <div class="panel hstack gap-3 items-center">
+                      <div class="panel w-48px h-48px rounded-circle bg-primary text-white d-flex items-center justify-center">
+                        <i class="icon icon-1 unicon-phone"></i>
+                      </div>
+                      <div class="panel">
+                        <h6 class="h6 m-0">Call us</h6>
+                        <p class="fs-7 opacity-70 m-0">+1 (555) 123-4567</p>
+                      </div>
+                    </div>
+                    <div class="panel hstack gap-3 items-center">
+                      <div class="panel w-48px h-48px rounded-circle bg-primary text-white d-flex items-center justify-center">
+                        <i class="icon icon-1 unicon-location-pin"></i>
+                      </div>
+                      <div class="panel">
+                        <h6 class="h6 m-0">Visit us</h6>
+                        <p class="fs-7 opacity-70 m-0">123 Fleet Street, Business District</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Contact Form -->
+              <div>
+                <div class="panel p-4 lg:p-6 bg-white dark:bg-gray-900 rounded-2">
+                  <form class="contact-form vstack gap-4" action="#" method="POST">
+                    <div class="panel vstack gap-2">
+                      <h3 class="h5 m-0">Send us a message</h3>
+                      <p class="fs-7 opacity-70 m-0">Fill out the form below and we'll get back to you within 24 hours.</p>
+                    </div>
+                    
+                    <div class="row child-cols-12 sm:child-cols-6 g-3">
+                      <div>
+                        <div class="form-group">
+                          <label class="form-label fs-7 fw-medium" for="firstName">First Name *</label>
+                          <input class="form-control" type="text" id="firstName" name="firstName" required>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="form-group">
+                          <label class="form-label fs-7 fw-medium" for="lastName">Last Name *</label>
+                          <input class="form-control" type="text" id="lastName" name="lastName" required>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label class="form-label fs-7 fw-medium" for="email">Email Address *</label>
+                      <input class="form-control" type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label class="form-label fs-7 fw-medium" for="company">Company Name</label>
+                      <input class="form-control" type="text" id="company" name="company">
+                    </div>
+                    
+                    <div class="form-group">
+                      <label class="form-label fs-7 fw-medium" for="fleetSize">Fleet Size</label>
+                      <select class="form-control" id="fleetSize" name="fleetSize">
+                        <option value="">Select fleet size</option>
+                        <option value="1-10">1-10 vehicles</option>
+                        <option value="11-50">11-50 vehicles</option>
+                        <option value="51-100">51-100 vehicles</option>
+                        <option value="100+">100+ vehicles</option>
+                      </select>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label class="form-label fs-7 fw-medium" for="message">Message *</label>
+                      <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us about your fleet management needs..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
+                        <label class="form-check-label fs-7" for="privacy">
+                          I agree to the <a href="privacy.html" class="text-primary">Privacy Policy</a> and <a href="#" class="text-primary">Terms of Service</a> *
+                        </label>
+                      </div>
+                    </div>
+                    
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary text-white w-100">
+                        <span class="btn-text">Send Message</span>
+                        <i class="icon icon-1 unicon-arrow-right ms-2"></i>
+                      </button>
+                    </div>
+                    
+                    <div class="panel text-center">
+                      <p class="fs-8 opacity-70 m-0">
+                        <i class="icon unicon-shield-check text-success me-1"></i>
+                        Your information is secure and will never be shared.
+                      </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Form Section end -->
   </div>
   <!-- Wrapper end -->
 
