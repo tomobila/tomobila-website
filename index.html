@@ -294,7 +294,7 @@
 
   <!--  Bottom Actions Sticky -->
   <div class="backtotop-wrap position-fixed bottom-0 end-0 z-99 m-2 vstack">
-    <div
+    <!-- <div
       class="darkmode-trigger cstack w-40px h-40px rounded-circle text-none bg-gray-100 dark:bg-gray-700 dark:text-white"
       data-darkmode-toggle="">
       <label class="switch">
@@ -302,7 +302,7 @@
         <input type="checkbox" />
         <span class="slider fs-5"></span>
       </label>
-    </div>
+    </div> -->
     <a class="btn btn-sm bg-primary text-white w-40px h-40px rounded-circle"
       href="https://unistudio.co/html/Tomobila/main/to_top" data-uc-backtotop>
       <i class="icon-2 unicon-chevron-up"></i>
@@ -1176,9 +1176,13 @@
               </ul>
             </div>
             <div class="uc-navbar-right">
+              <a class="btn btn-md btn-tertiary dark:bg-white dark:text-dark border fs-5 lg:px-3 d-none lg:d-inline-flex shadow-xs" href="https://app.tomobila.com" target="_blank">
+                Se connecter
+              </a>
               <div class="d-inline-block">
-                <a href="#" class="hstack gap-1 text-none fw-medium text-black" role="button" aria-haspopup="true">
-                  <i class="icon icon-1 unicon-wikis fw-bold text-black"></i>
+                
+                <a href="#" class="hstack gap-1 text-none fw-medium text-white" role="button" aria-haspopup="true">
+                  <i class="icon icon-1 unicon-wikis fw-bold text-white"></i>
                 </a>
                 <div class="p-2 bg-white dark:bg-gray-300 dark:bg-opacity-15 border shadow-xs rounded w-100px uc-drop"
                   data-uc-drop="mode: click; offset: 16; pos: bottom-right; boundary: !.uc-footer-widgets; animation: uc-animation-slide-top-small; duration: 150;"
@@ -1191,14 +1195,8 @@
                 </div>
               </div>
 
-              <a class="d-block lg:d-none uc-icon uc-navbar-toggle-icon text-white" href="#uc-menu-panel"
-                data-uc-navbar-toggle-icon="" data-uc-toggle="" role="button" aria-label="Open menu">
-                <svg width="20" height="20" viewBox="0 0 20 20">
-                  <rect class="line-1" y="3" width="20" height="2"></rect>
-                  <rect class="line-2" y="9" width="20" height="2"></rect>
-                  <rect class="line-3" y="9" width="20" height="2"></rect>
-                  <rect class="line-4" y="15" width="20" height="2"></rect>
-                </svg>
+              <a class="btn btn-md btn-tertiary w-48px h-48px d-inline-flex lg:d-none" href="index.html#uc-menu-panel" data-uc-toggle="" role="button">
+                <i class="icon icon-2 unicon-menu"></i>
               </a>
             </div>
           </div>
