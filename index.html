@@ -85,7 +85,7 @@
 <body
   class="uni-body panel uni-body panel bg-white text-tertiary-900 dark:bg-tertiary-800 dark:text-tertiary-200 overflow-x-hidden disable-cursor">
   <!--  GDPR modal -->
-  <div id="uc-gdpr-notification"
+  <!-- <div id="uc-gdpr-notification"
     class="uc-gdpr-notification uc-notification min-w-1/2 uc-notification-bottom-left lg:m-2">
     <div
       class="uc-notification-message vstack lg:hstack items-end gap-2 lg:gap-4 lg:p-3 bg-white text-dark border rounded-1-5 min-w-1/2">
@@ -102,7 +102,7 @@
       </div>
       <button class="btn btn-sm btn-primary px-2" id="uc-accept-gdpr">Accepter</button>
     </div>
-  </div>
+  </div> -->
 
   <!--  Search modal -->
   <div id="uc-search-modal" class="uc-modal-full uc-modal" data-uc-modal="overlay: true">
@@ -2160,8 +2160,269 @@
           </div>
         </div>
       </div> -->
+
+
       <!-- Section end -->
 
+      <div id="pricing" class="pricing section panel overflow-hidden">
+        <div class="section-outer panel py-6 xl:py-10 lg:mx-2 mt-2 rounded-2 xl:rounded-3 bg-gray-800 dark:bg-gray-300 dark:bg-opacity-15 text-white" data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 200;" style="transform: translateY(0px); opacity: 1;">
+            <div class="container">
+                <div class="section-inner panel">
+                    <div class="pricing-tables panel vstack justify-center items-center gap-4 sm:gap-6 xl:gap-8" data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});">
+                        <div class="section-header vstack items-center gap-2 lg:gap-3" style="transform: translateY(0px); opacity: 1;">
+                            <h2 class="h3 md:h1 lg:display-5 m-0 text-center max-w-650px mx-auto text-white">Seamless prices and scalable plans</h2>
+                        </div>
+                        <div class="panel w-100" style="transform: translateY(0px); opacity: 1;">
+                            <ul class="uc-subnav uc-subnav-pill gap-1 uc-child-width-expand rounded-1-5 p-narrow max-w-xs mx-auto border" data-uc-switcher="swiping: false;" role="tablist">
+                                <li class="uc-active" role="presentation">
+                                    <a class="d-flex justify-center text-white" href="#" aria-selected="true" role="tab" id="uc-switcher-23" aria-controls="uc-switcher-24">Pay monthly</a>
+                                </li>
+                                <li role="presentation">
+                                    <a class="d-flex justify-center text-white" href="#" aria-selected="false" tabindex="-1" role="tab" id="uc-switcher-25" aria-controls="uc-switcher-26">Pay yearly</a>
+                                    <img class="position-absolute top-50 start-100 translate-middle-y mt-n3 ltr:ms-2 rtl:me-2 text-tertiary d-none md:d-block" src="../assets/images/template/50_off.svg" alt="50% OFF" data-uc-svg="" hidden=""><svg width="130" height="56" viewBox="0 0 130 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute top-50 start-100 translate-middle-y mt-n3 ltr:ms-2 rtl:me-2 text-tertiary d-none md:d-block uc-svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M55.4318 0.918759C71.0401 4.01405 83.2864 14.6023 89.8035 23.4046C90.1321 23.8485 90.0387 24.4747 89.5948 24.8034C89.151 25.132 88.5247 25.0386 88.1961 24.5947C81.8799 16.0637 70.0262 5.85193 55.0428 2.88055C40.5812 0.0126681 23.002 3.85028 4.41551 22.9149L10.9595 22.687C11.5115 22.6678 11.9745 23.0997 11.9937 23.6516C12.0129 24.2036 11.5811 24.6666 11.0291 24.6858L2.03458 24.9991C1.48263 25.0183 1.01961 24.5864 1.00038 24.0345L0.687141 15.0399C0.667919 14.488 1.09978 14.0249 1.65173 14.0057C2.20368 13.9865 2.66671 14.4184 2.68593 14.9703L2.91639 21.5877C21.9179 2.06457 40.1783 -2.10617 55.4318 0.918759Z" fill="#111111"></path>
+<path d="M118.471 20.6416L125.206 17.5194L125.798 18.7968L120.573 21.2192L122.053 24.4128L126.35 22.421L126.942 23.6985L122.645 25.6902L124.718 30.1612L123.208 30.861L118.471 20.6416Z" fill="#111111"></path>
+<path d="M110.348 24.4067L117.083 21.2845L117.675 22.5619L112.449 24.9844L113.93 28.1779L118.227 26.1862L118.819 27.4636L114.522 29.4554L116.595 33.9264L115.085 34.6262L110.348 24.4067Z" fill="#111111"></path>
+<path d="M104.021 27.1984C105.037 26.7274 106.03 26.5492 107 26.6638C107.971 26.7784 108.838 27.1406 109.603 27.7502C110.377 28.3553 110.988 29.1418 111.437 30.1095C111.886 31.0773 112.091 32.0521 112.052 33.0341C112.023 34.0116 111.739 34.9075 111.199 35.722C110.66 36.5364 109.882 37.1791 108.866 37.6501C107.85 38.1212 106.856 38.2994 105.886 38.1847C104.916 38.0701 104.044 37.7102 103.27 37.1051C102.505 36.4955 101.898 35.7068 101.45 34.739C101.001 33.7713 100.791 32.7987 100.82 31.8212C100.859 30.8392 101.148 29.941 101.687 29.1266C102.227 28.3122 103.005 27.6695 104.021 27.1984ZM108.274 36.3727C108.98 36.0452 109.514 35.5862 109.875 34.9955C110.246 34.4004 110.432 33.7378 110.435 33.0077C110.437 32.2776 110.268 31.5448 109.927 30.8093C109.586 30.0738 109.136 29.4711 108.578 29.0012C108.019 28.5313 107.393 28.2455 106.699 28.1439C106.015 28.0377 105.32 28.1484 104.613 28.4759C103.907 28.8033 103.368 29.2646 102.997 29.8597C102.636 30.4504 102.454 31.1107 102.452 31.8408C102.449 32.5709 102.619 33.3037 102.959 34.0392C103.3 34.7747 103.75 35.3774 104.309 35.8473C104.868 36.3172 105.489 36.6053 106.173 36.7114C106.867 36.8131 107.567 36.7002 108.274 36.3727Z" fill="#111111"></path>
+<path d="M87.6008 40.4536C87.175 40.6509 86.7456 40.7265 86.3127 40.6803C85.8798 40.6341 85.4858 40.4816 85.1308 40.223C84.7809 39.9501 84.5051 39.596 84.3032 39.1605C84.1058 38.7347 84.0183 38.305 84.0407 37.8713C84.0683 37.4236 84.2043 37.0195 84.4488 36.6593C84.6888 36.2894 85.0217 36.0057 85.4475 35.8084C85.8637 35.6155 86.2856 35.5492 86.7133 35.6096C87.1463 35.6558 87.5376 35.8153 87.8875 36.0882C88.2425 36.3468 88.5187 36.6891 88.7161 37.1149C88.918 37.5504 89.0051 37.992 88.9776 38.4398C88.9552 38.8734 88.8218 39.2704 88.5773 39.6306C88.3424 39.9863 88.0169 40.2607 87.6008 40.4536ZM89.1789 46.6351L90.945 33.4011L92.1063 32.8628L90.3402 46.0968L89.1789 46.6351ZM87.1556 39.5313C87.4847 39.3787 87.6977 39.1154 87.7947 38.7412C87.8871 38.3574 87.8459 37.9768 87.671 37.5994C87.496 37.222 87.2344 36.9493 86.8862 36.7816C86.5336 36.6041 86.1927 36.5916 85.8637 36.7441C85.5347 36.8967 85.3239 37.1648 85.2314 37.5487C85.1344 37.9228 85.1734 38.2986 85.3484 38.676C85.5233 39.0534 85.7871 39.3309 86.1398 39.5083C86.488 39.6761 86.8266 39.6838 87.1556 39.5313ZM95.8666 43.6761C95.4408 43.8735 95.0114 43.9491 94.5785 43.9029C94.1456 43.8567 93.7516 43.7042 93.3966 43.4456C93.0467 43.1727 92.7709 42.8186 92.569 42.3831C92.3716 41.9573 92.2841 41.5276 92.3065 41.0939C92.3341 40.6461 92.4701 40.2421 92.7146 39.8819C92.9546 39.512 93.2876 39.2283 93.7134 39.0309C94.1295 38.8381 94.5514 38.7718 94.9792 38.8322C95.4121 38.8784 95.8035 39.0379 96.1533 39.3108C96.5084 39.5694 96.7846 39.9117 96.9819 40.3375C97.1838 40.773 97.271 41.2146 97.2434 41.6624C97.221 42.096 97.0876 42.4929 96.8431 42.8532C96.6082 43.2089 96.2828 43.4833 95.8666 43.6761ZM95.4215 42.7538C95.7505 42.6013 95.9635 42.338 96.0605 41.9638C96.153 41.58 96.1117 41.1994 95.9368 40.822C95.7618 40.4445 95.5003 40.1719 95.1521 40.0041C94.7994 39.8267 94.4585 39.8142 94.1295 39.9667C93.8005 40.1192 93.5897 40.3874 93.4972 40.7712C93.4002 41.1454 93.4392 41.5212 93.6142 41.8986C93.7891 42.276 94.0529 42.5535 94.4056 42.7309C94.7538 42.8987 95.0924 42.9064 95.4215 42.7538Z" fill="#111111"></path>
+<path d="M77.8898 39.3113C78.7318 38.9211 79.5533 38.8165 80.3545 38.9977C81.1512 39.1692 81.8834 39.5822 82.5513 40.2367C83.2243 40.8771 83.7941 41.7004 84.2607 42.7069C84.7272 43.7134 84.9896 44.6852 85.0477 45.6223C85.1111 46.5452 84.953 47.3709 84.5735 48.0994C84.1896 48.8182 83.5766 49.3727 82.7347 49.763C81.8927 50.1533 81.0734 50.2627 80.2767 50.0912C79.4756 49.91 78.7385 49.4992 78.0654 48.8589C77.3976 48.2044 76.8304 47.3739 76.3638 46.3675C75.8973 45.361 75.6323 44.3963 75.569 43.4733C75.5108 42.5362 75.6737 41.7083 76.0577 40.9895C76.4372 40.261 77.0479 39.7016 77.8898 39.3113ZM82.1425 48.4856C82.9651 48.1043 83.4282 47.4546 83.5317 46.5366C83.6449 45.6141 83.4234 44.5529 82.8671 43.3529C82.3108 42.1529 81.6442 41.298 80.867 40.7882C80.0996 40.2739 79.3046 40.2075 78.482 40.5888C77.6594 40.9701 77.1915 41.622 77.0783 42.5445C76.9748 43.4625 77.2011 44.5215 77.7574 45.7215C78.3136 46.9215 78.9755 47.7786 79.7429 48.2929C80.5201 48.8027 81.3199 48.8669 82.1425 48.4856Z" fill="#111111"></path>
+<path d="M68.6099 48.763C68.7507 48.3567 68.9885 47.982 69.3232 47.6387C69.6676 47.291 70.0672 47.0117 70.522 46.8009C71.093 46.5362 71.6932 46.4108 72.3228 46.4247C72.9523 46.4385 73.5456 46.6279 74.1028 46.9928C74.6599 47.3576 75.1111 47.9126 75.4566 48.6578C75.7706 49.3352 75.9222 50.0174 75.9114 50.7043C75.9058 51.377 75.7009 52.0129 75.2966 52.6118C74.8975 53.1965 74.2721 53.6862 73.4205 54.081C72.627 54.4489 71.8822 54.6177 71.1864 54.5876C70.5002 54.5529 69.9001 54.3491 69.3862 53.9759C68.882 53.5983 68.4773 53.0805 68.1723 52.4224L69.5368 51.7899C69.788 52.3318 70.1865 52.7349 70.7323 52.9993C71.2877 53.2591 71.9864 53.1939 72.8284 52.8036C73.6316 52.4312 74.1187 51.935 74.2898 51.3149C74.4661 50.6806 74.4039 50.0393 74.1034 49.3909C73.8163 48.7715 73.3805 48.3387 72.796 48.0923C72.2167 47.8318 71.5303 47.8854 70.7367 48.2533C70.1658 48.5179 69.7793 48.8382 69.5772 49.214C69.3707 49.5801 69.2552 50.0158 69.2307 50.5209L67.8662 51.1534L65.8714 45.0239L71.6924 42.3256L72.2846 43.6031L67.5958 45.7765L68.2539 47.7288C68.3512 47.9894 68.4001 48.2724 68.4006 48.5778C68.3992 48.6255 68.3929 48.6755 68.3818 48.7276C68.3708 48.7798 68.3671 48.8226 68.3709 48.8561C68.3799 48.8755 68.4056 48.893 68.4481 48.9085L68.5196 48.9107C68.5486 48.8972 68.5787 48.848 68.6099 48.763Z" fill="#111111"></path>
+</svg>
+                                </li>
+                            </ul>
+                            <div class="uc-switcher mt-4 lg:mt-6" role="presentation">
+                                <li class="uc-active" id="uc-switcher-24" role="tabpanel" aria-labelledby="uc-switcher-23">
+                                    <div class="swiper overflow-unset lg:overflow-hidden swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden" data-uc-swiper="items: 1.1; gap: 8; center: true; center-bounds: true;" data-uc-swiper-s="items: 2.1; gap: 16;" data-uc-swiper-m="items: 3; gap: 16;" data-uc-swiper-l="items: 3; gap: 24;">
+                                        <div class="swiper-wrapper" id="swiper-wrapper-182f47aa5bc611096" aria-live="polite" style="transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(0px, 0px, 0px);">
+                                            <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-prev" style="width: 413.333px; margin-right: 24px;" role="group" aria-label="1 / 3">
+                                                <div class="pricing-box panel p-2 md:p-3 lg:p-4 xl:p-5 vstack items-center rounded-1-5 lg:rounded-2 text-center bg-gray-300 bg-opacity-15 text-white">
+                                                    <span class="pricing-box-title fs-6 fw-bold py-narrow px-2 border rounded-pill mb-2">Starter</span>
+                                                    <p class="pricing-box-desc opacity-70">For individuals, freelancers</p>
+                                                    <div class="pricing-box-price hstack justify-center gap-narrow mt-2">
+                                                        <h4 class="price h1 lg:display-5 m-0 text-inherit">$24</h4>
+                                                        <span class="duration fs-7 opacity-70">/ month</span>
+                                                    </div>
+                                                    <p class="pricing-box-bill fs-7 opacity-70">Billed once yearly</p>
+                                                    <hr>
+                                                    <ul class="nav-y items-center gap-1 fs-6">
+                                                        <li class="mb-1">Standout features</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Fast and Reliable</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Discover Data Everywhere</li>
+                                                    </ul>
+                                                    <div class="pricing-box-cta vstack gap-1 justify-center text-center mt-4">
+                                                        <a class="btn btn-md btn-secondary w-100" href="/html/lexend/main/sign-up">Try for free</a>
+                                                        <span class="fs-7 opacity-70">No credit card required!</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" style="width: 413.333px; margin-right: 24px;" role="group" aria-label="2 / 3">
+                                                <div class="pricing-box panel p-2 md:p-3 lg:p-4 xl:p-5 vstack items-center rounded-1-5 lg:rounded-2 text-center bg-secondary text-dark shadow-xs">
+                                                    <span class="pricing-box-title fs-6 fw-bold py-narrow px-2 border rounded-pill mb-2">Pro</span>
+                                                    <p class="pricing-box-desc opacity-70">For startups, agencies</p>
+                                                    <div class="pricing-box-price hstack justify-center gap-narrow mt-2">
+                                                        <h4 class="price h1 lg:display-5 m-0 text-inherit">$48</h4>
+                                                        <span class="duration fs-7 opacity-70">/ month</span>
+                                                    </div>
+                                                    <p class="pricing-box-bill fs-7 opacity-70">Billed once yearly</p>
+                                                    <hr>
+                                                    <ul class="nav-y items-center gap-1 fs-6">
+                                                        <li class="mb-1">Standout features</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Fast and Reliable</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Discover Data Everywhere</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Enrich Data with Context</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Risk Management</li>
+                                                    </ul>
+                                                    <div class="pricing-box-cta vstack gap-1 justify-center text-center mt-4">
+                                                        <a class="btn btn-md btn-primary border" href="/html/lexend/main/sign-up">Try for free</a>
+                                                        <span class="fs-7 opacity-70">No credit card required!</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-visible swiper-slide-next" role="group" aria-label="3 / 3" style="width: 413.333px; margin-right: 24px;">
+                                                <div class="pricing-box panel p-2 md:p-3 lg:p-4 xl:p-5 vstack items-center rounded-1-5 lg:rounded-2 text-center bg-gray-300 bg-opacity-15 text-white">
+                                                    <span class="pricing-box-title fs-6 fw-bold py-narrow px-2 border rounded-pill mb-2">Business</span>
+                                                    <p class="pricing-box-desc opacity-70">For large business, companies</p>
+                                                    <div class="pricing-box-price hstack justify-center gap-narrow mt-2">
+                                                        <h4 class="price h1 lg:display-5 m-0 text-inherit">$64</h4>
+                                                        <span class="duration fs-7 opacity-70">/ month</span>
+                                                    </div>
+                                                    <p class="pricing-box-bill fs-7 opacity-70">Billed once yearly</p>
+                                                    <hr>
+                                                    <ul class="nav-y items-center gap-1 fs-6">
+                                                        <li class="mb-1">Standout features</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Fast and Reliable</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Discover Data Everywhere</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Enrich Data with Context</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Risk Management</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Privacy Compliance</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Third-Party Management</li>
+                                                    </ul>
+                                                    <div class="pricing-box-cta vstack items-center gap-2 justify-center text-center mt-4">
+                                                        <a class="btn btn-md btn-secondary w-100" href="/html/lexend/main/page-contact-2">Get in touch</a>
+                                                        <a href="#" class="uc-link fs-7 fw-medium border-bottom text-secondary">Learn more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                </li>
+                                <li id="uc-switcher-26" role="tabpanel" aria-labelledby="uc-switcher-25">
+                                    <div class="swiper overflow-unset lg:overflow-hidden swiper-initialized swiper-horizontal swiper-watch-progress" data-uc-swiper="items: 1.1; gap: 8; center: true; center-bounds: true;" data-uc-swiper-s="items: 2.1; gap: 16;" data-uc-swiper-m="items: 3; gap: 16;" data-uc-swiper-l="items: 3; gap: 24;">
+                                        <div class="swiper-wrapper" id="swiper-wrapper-495b1568b8ef50b7" aria-live="polite" style="transition-duration: 0ms; transition-delay: 0ms;">
+                                            <div class="swiper-slide">
+                                                <div class="pricing-box panel p-2 md:p-3 lg:p-4 xl:p-5 vstack items-center rounded-1-5 lg:rounded-2 text-center bg-gray-300 bg-opacity-15 text-white">
+                                                    <span class="pricing-box-title fs-6 fw-bold py-narrow px-2 border rounded-pill mb-2">Starter</span>
+                                                    <p class="pricing-box-desc opacity-70">For individuals, freelancers</p>
+                                                    <div class="pricing-box-price hstack justify-center gap-narrow mt-2">
+                                                        <h4 class="price h1 lg:display-5 m-0 text-inherit">$12</h4>
+                                                        <span class="duration fs-7 opacity-70">/ month</span>
+                                                    </div>
+                                                    <p class="pricing-box-bill fs-7 opacity-70">Billed once yearly</p>
+                                                    <hr>
+                                                    <ul class="nav-y items-center gap-1 fs-6">
+                                                        <li class="mb-1">Standout features</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Fast and Reliable</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Discover Data Everywhere</li>
+                                                    </ul>
+                                                    <div class="pricing-box-cta vstack gap-1 justify-center text-center mt-4">
+                                                        <a class="btn btn-md btn-secondary w-100" href="/html/lexend/main/sign-up">Try for free</a>
+                                                        <span class="fs-7 opacity-70">No credit card required!</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="pricing-box panel p-2 md:p-3 lg:p-4 xl:p-5 vstack items-center rounded-1-5 lg:rounded-2 text-center bg-secondary text-dark shadow-xs">
+                                                    <span class="pricing-box-title fs-6 fw-bold py-narrow px-2 border rounded-pill mb-2">Pro</span>
+                                                    <p class="pricing-box-desc opacity-70">For startups, agencies</p>
+                                                    <div class="pricing-box-price hstack justify-center gap-narrow mt-2">
+                                                        <h4 class="price h1 lg:display-5 m-0 text-inherit">$24</h4>
+                                                        <span class="duration fs-7 opacity-70">/ month</span>
+                                                    </div>
+                                                    <p class="pricing-box-bill fs-7 opacity-70">Billed once yearly</p>
+                                                    <hr>
+                                                    <ul class="nav-y items-center gap-1 fs-6">
+                                                        <li class="mb-1">Standout features</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Fast and Reliable</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Discover Data Everywhere</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Enrich Data with Context</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Risk Management</li>
+                                                    </ul>
+                                                    <div class="pricing-box-cta vstack gap-1 justify-center text-center mt-4">
+                                                        <a class="btn btn-md btn-primary border" href="/html/lexend/main/sign-up">Try for free</a>
+                                                        <span class="fs-7 opacity-70">No credit card required!</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="pricing-box panel p-2 md:p-3 lg:p-4 xl:p-5 vstack items-center rounded-1-5 lg:rounded-2 text-center bg-gray-300 bg-opacity-15 text-white">
+                                                    <span class="pricing-box-title fs-6 fw-bold py-narrow px-2 border rounded-pill mb-2">Business</span>
+                                                    <p class="pricing-box-desc opacity-70">For large business, companies</p>
+                                                    <div class="pricing-box-price hstack justify-center gap-narrow mt-2">
+                                                        <h4 class="price h1 lg:display-5 m-0 text-inherit">$32</h4>
+                                                        <span class="duration fs-7 opacity-70">/ month</span>
+                                                    </div>
+                                                    <p class="pricing-box-bill fs-7 opacity-70">Billed once yearly</p>
+                                                    <hr>
+                                                    <ul class="nav-y items-center gap-1 fs-6">
+                                                        <li class="mb-1">Standout features</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Fast and Reliable</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Discover Data Everywhere</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Enrich Data with Context</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Risk Management</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Privacy Compliance</li>
+                                                        <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> Third-Party Management</li>
+                                                    </ul>
+                                                    <div class="pricing-box-cta vstack items-center gap-2 justify-center text-center mt-4">
+                                                        <a class="btn btn-md btn-secondary w-100" href="/html/lexend/main/page-contact-2">Get in touch</a>
+                                                        <a href="#" class="uc-link fs-7 fw-medium border-bottom text-secondary">Learn more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                </li>
+                            </div>
+                            <p class="text-center mt-4 lg:mt-6 ">*Yearly discount available on select plans.</p>
+                        </div>
+                        <div class="panel w-100 max-w-lg" style="transform: translateY(0px); opacity: 1;">
+                            <div class="row child-cols col-match items-center justify-center text-center gy-4 lg:gy-8" data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});">
+                                <div style="transform: translateY(0px); opacity: 1;">
+                                    <div class="fact-item panel vstack gap-1">
+                                        <h5 class="h3 md:h2 lg:h1 xl:display-5 m-0 text-tertiary">280+</h5>
+                                        <p class="fw-medium">Track of leads</p>
+                                    </div>
+                                </div>
+                                <div style="transform: translateY(0px); opacity: 1;">
+                                    <div class="fact-item panel vstack gap-1">
+                                        <h5 class="h3 md:h2 lg:h1 xl:display-5 m-0 text-tertiary">90%</h5>
+                                        <p class="fw-medium">Satisfied users</p>
+                                    </div>
+                                </div>
+                                <div style="transform: translateY(0px); opacity: 1;">
+                                    <div class="fact-item panel vstack gap-1">
+                                        <h5 class="h3 md:h2 lg:h1 xl:display-5 m-0 text-tertiary">10.2k</h5>
+                                        <p class="fw-medium">Team collaborations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div id="faq" class="faq section panel my-6">
+        <div class="section-outer panel">
+            <div class="container">
+                <div class="section-inner panel" data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});">
+                    <div class="row child-cols-12 col-match gy-2 lg:gy-6" style="transform: translateY(0px); opacity: 1;">
+                        <div>
+                            <div class="vstack items-center text-center gap-2">
+                                <h2 class="h4 lg:h3 m-0">FAQ</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="panel">
+                                <ul class="uc-accordion gap-1 max-w-850px mx-auto" data-uc-accordion="targets: > li; multiple: false;">
+                                    <li class="panel p-3 lg:p-4 rounded-1-5 bg-secondary dark:bg-gray-300 dark:bg-opacity-15">
+                                        <a class="uc-accordion-title h6 md:h5 lg:h4 ls-0 fw-bold ltr:pe-4 rtl:ps-4" href="#" id="uc-accordion-27" role="button" aria-controls="uc-accordion-28" aria-expanded="false" aria-disabled="false">Do I need to know about how to code?</a>
+                                        <div class="uc-accordion-content lg:fs-5 opacity-70" hidden="" id="uc-accordion-28" role="region" aria-labelledby="uc-accordion-27">
+                                            <p>Yes, you need to have a fair amount of knowledge in dealing with HTML/CSS as well as JavaScript in order to be able to use Lexend.</p>
+                                        </div>
+                                    </li>
+                                    <li class="panel p-3 lg:p-4 rounded-1-5 bg-secondary dark:bg-gray-300 dark:bg-opacity-15">
+                                        <a class="uc-accordion-title h6 md:h5 lg:h4 ls-0 fw-bold ltr:pe-4 rtl:ps-4" href="#" id="uc-accordion-29" role="button" aria-controls="uc-accordion-30" aria-expanded="false" aria-disabled="false">Can I use it for commercial projects?</a>
+                                        <div class="uc-accordion-content lg:fs-5 opacity-70" hidden="" id="uc-accordion-30" role="region" aria-labelledby="uc-accordion-29">
+                                            <p>Feel free to do so. Lexend does exist to evolve every commercial project. You can also use it to build stunning websites for your own clients (we won’t breathe a word).</p>
+                                        </div>
+                                    </li>
+                                    <li class="panel p-3 lg:p-4 rounded-1-5 bg-secondary dark:bg-gray-300 dark:bg-opacity-15">
+                                        <a class="uc-accordion-title h6 md:h5 lg:h4 ls-0 fw-bold ltr:pe-4 rtl:ps-4" href="#" id="uc-accordion-31" role="button" aria-controls="uc-accordion-32" aria-expanded="false" aria-disabled="false">Can I use it for multiple projects?</a>
+                                        <div class="uc-accordion-content lg:fs-5 opacity-70" hidden="" id="uc-accordion-32" role="region" aria-labelledby="uc-accordion-31">
+                                            <p>Definitely! Please use it however you like; we don’t limit it.</p>
+                                        </div>
+                                    </li>
+                                    <li class="panel p-3 lg:p-4 rounded-1-5 bg-secondary dark:bg-gray-300 dark:bg-opacity-15">
+                                        <a class="uc-accordion-title h6 md:h5 lg:h4 ls-0 fw-bold ltr:pe-4 rtl:ps-4" href="#" id="uc-accordion-33" role="button" aria-controls="uc-accordion-34" aria-expanded="false" aria-disabled="false">Can I use it to create and sell a product?</a>
+                                        <div class="uc-accordion-content lg:fs-5 opacity-70" hidden="" id="uc-accordion-34" role="region" aria-labelledby="uc-accordion-33">
+                                            <p>Do not ever consider doing it.</p>
+                                        </div>
+                                    </li>
+                                    <li class="panel p-3 lg:p-4 rounded-1-5 bg-secondary dark:bg-gray-300 dark:bg-opacity-15">
+                                        <a class="uc-accordion-title h6 md:h5 lg:h4 ls-0 fw-bold ltr:pe-4 rtl:ps-4" href="#" id="uc-accordion-35" role="button" aria-controls="uc-accordion-36" aria-expanded="false" aria-disabled="false">What is your refund policy?</a>
+                                        <div class="uc-accordion-content lg:fs-5 opacity-70" hidden="" id="uc-accordion-36" role="region" aria-labelledby="uc-accordion-35">
+                                            <p>We understand the importance of customer satisfaction and we strive to provide the best products and services. However, please note that due to the nature of our products and services, we do not offer refunds after a purchase has been made.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
       <div id="clients_feedback" class="clients-feedback section panel overflow-hidden">
         <div class="section-outer panel">
@@ -2745,6 +3006,112 @@
       </div>
       <!-- Section end -->
 
+      <div id="features" class="products section panel">
+        <div class="section-outer panel py-6 sm:py-8 xl:py-10">
+            <div class="container">
+                <div class="section-inner panel" data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});">
+                    <div class="section-heading panel vstack gap-2 xl:gap-3 mb-4 sm:mb-6 xl:mb-9 text-center lg:text-start" style="transform: translateY(0px); opacity: 1;">
+                        <h2 class="h3 lg:h2 xl:h1 m-0">Automate the Repetitive, <span class="text-primary dark:text-primary-400">Focus on the Meaningful</span></h2>
+                    </div>
+                    <div class="section-content panel" style="transform: translateY(0px); opacity: 1;">
+                        <div class="row child-cols-12 g-4 xl:g-9">
+                            <div class="sm:col-auto d-none lg:d-block">
+                                <div class="uc-sticky-placeholder" style="height: 0px; width: 0px; margin: 0px;" hidden=""></div><div class="uc-sidebar panel uc-sticky" data-uc-sticky="end: .unicore-components; offset: 130;" style="position: sticky; top: 130px;">
+                                    <ul class="custom-scrollspy uc-nav uc-nav-default panel vstack gap-1 xl:gap-2 fs-6 xl:fs-4 p-2 rounded-2 xl:rounded-3 border bg-transparent text-white dark:text-dark" data-uc-scrollspy-nav="closest: li; scroll: true; offset: 215">
+                                        <li class="px-3 xl:px-4 py-1 xl:py-2 rounded-1-5 xl:rounded-2 duration-150 uc-active"><a href="#ai_Powered_analytics">AI-Powered Analytics</a></li>
+                                        <li class="px-3 xl:px-4 py-1 xl:py-2 rounded-1-5 xl:rounded-2 duration-150"><a href="#workflow_automation">Workflow Automation</a></li>
+                                        <li class="px-3 xl:px-4 py-1 xl:py-2 rounded-1-5 xl:rounded-2 duration-150"><a href="#team_collaboration">Team Collaboration</a></li>
+                                        <li class="px-3 xl:px-4 py-1 xl:py-2 rounded-1-5 xl:rounded-2 duration-150"><a href="#customer_insights">Customer Insights</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sm:col">
+                                <div class="unicore-components min-h-screen vstack gap-6 xl:gap-8">
+                                    <div class="panel">
+                                        <div class="row child-cols-12 items-center g-4 xl:g-6">
+                                            <div class="sm:col order-1 sm:order-0">
+                                                <div class="vstack gap-2 xl:gap-3">
+                                                    <h3 id="ai_Powered_analytics" class="h4 xl:h3 mb-0">AI-Powered Analytics</h3>
+                                                    <p class="fs-5 lg:fs-6 xl:fs-4 text-gray-500 dark:text-gray-200">Our machine learning engine analyzes every customer interaction to identify patterns, predict emerging issues, and highlight opportunities.</p>
+                                                    <a href="#" class="uc-link fw-bold hstack gap-narrow mt-2 xl:mt-3 text-primary dark:text-primary-400">
+                                                        <span>See analytics in action</span>
+                                                        <i class="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="sm:col-auto order-0 sm:order-1">
+                                                <figure class="panel ratio ratio-1x1 overflow-hidden sm:w-300px xl:w-400px">
+                                                    <img class="image media-cover" src="../assets/images/features/home-15-feature-01.png" alt="image">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="row child-cols-12 items-center g-4 xl:g-6">
+                                            <div class="sm:col-auto">
+                                                <figure class="panel ratio ratio-1x1 overflow-hidden sm:w-300px xl:w-400px">
+                                                    <img class="image media-cover" src="../assets/images/features/home-15-feature-02.png" alt="image">
+                                                </figure>
+                                            </div>
+                                            <div class="sm:col">
+                                                <div class="vstack gap-2 xl:gap-3">
+                                                    <h3 id="workflow_automation" class="h4 xl:h3 mb-0">Workflow Automation</h3>
+                                                    <p class="fs-5 lg:fs-6 xl:fs-4 text-gray-500 dark:text-gray-200">Our machine learning engine analyzes every customer interaction to identify patterns, predict emerging issues, and highlight opportunities.</p>
+                                                    <a href="#" class="uc-link fw-bold hstack gap-narrow mt-2 xl:mt-3 text-primary dark:text-primary-400">
+                                                        <span>See how it works</span>
+                                                        <i class="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="row child-cols-12 items-center g-4 xl:g-6">
+                                            <div class="sm:col order-1 sm:order-0">
+                                                <div class="vstack gap-2 xl:gap-3">
+                                                    <h3 id="team_collaboration" class="h4 xl:h3 mb-0">Team Collaboration</h3>
+                                                    <p class="fs-5 lg:fs-6 xl:fs-4 text-gray-500 dark:text-gray-200">Our machine learning engine analyzes every customer interaction to identify patterns, predict emerging issues, and highlight opportunities.</p>
+                                                    <a href="#" class="uc-link fw-bold hstack gap-narrow mt-2 xl:mt-3 text-primary dark:text-primary-400">
+                                                        <span>Let’s collaborate</span>
+                                                        <i class="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="sm:col-auto order-0 sm:order-1">
+                                                <figure class="panel ratio ratio-1x1 overflow-hidden sm:w-300px xl:w-400px">
+                                                    <img class="image media-cover" src="../assets/images/features/home-15-feature-03.png" alt="image">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="row child-cols-12 items-center g-4 xl:g-6">
+                                            <div class="sm:col-auto">
+                                                <figure class="panel ratio ratio-1x1 overflow-hidden sm:w-300px xl:w-400px">
+                                                    <img class="image media-cover" src="../assets/images/features/home-15-feature-04.png" alt="image">
+                                                </figure>
+                                            </div>
+                                            <div class="sm:col">
+                                                <div class="vstack gap-2 xl:gap-3">
+                                                    <h3 id="customer_insights" class="h4 xl:h3 mb-0">Seamless Integrations</h3>
+                                                    <p class="fs-5 lg:fs-6 xl:fs-4 text-gray-500 dark:text-gray-200">Our machine learning engine analyzes every customer interaction to identify patterns, predict emerging issues, and highlight opportunities.</p>
+                                                    <a href="#" class="uc-link fw-bold hstack gap-narrow mt-2 xl:mt-3 text-primary dark:text-primary-400">
+                                                        <span>View all integrations</span>
+                                                        <i class="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
       <div class="panel overflow-hidden section">
         <div class="section-outer panel py-6 md:py-8 xl:py-10">
@@ -2997,6 +3364,100 @@
         </div>
       </div>
     </footer>
+
+    <footer id="uc-footer" class="uc-footer panel overflow-hidden ft-tertiary " data-anime="onview: -100; translateY: [24, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 750; delay: 250;" style="transform: translateY(0px); opacity: 1;">
+      <div class="footer-outer py-6 lg:py-8 xl:py-9 lg:mx-2 rounded-2 xl:rounded-3 dark:text-white bg-gradient-to-b from-secondary to-transparent dark:from-gray-700 dark:to-transparent">
+          <div class="uc-footer-cta">
+              <div class="container">
+                  <div class="section-inner panel vstack gap-4 lg:gap-6 xl:gap-8">
+                      <div class="panel">
+                          <div class="row child-cols-12 justify-between items-center g-3 sm:g-4 text-center lg:text-start">
+                              <div class="lg:col-7 xl:col-6">
+                                  <div class="vstack gap-1 sm:gap-2">
+                                      <h2 class="h4 sm:h2 xl:h1 m-0">
+                                          Automate Tasks, <br> Collaborate Seamlessly
+                                      </h2>
+                                  </div>
+                              </div>
+                              <div class="lg:col-auto">
+                                  <div class="vstack gap-2 items-center">
+                                      <a class="btn btn-md xl:btn-lg text-white bg-gradient-to-r from-primary to-tertiary gradient-hover hover:bg-opacity-70 dark:hover:bg-opacity-80 border-0 shadow-sm rounded-2 sm:rounded px-3 py-2 lg:min-w-200px" href="/html/lexend/main/page-pricing-2">
+                                          <span>Start a free trial</span>
+                                      </a>
+                                      <span class="fs-7 dark:text-white text-opacity-75">No credit card required!</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <hr class="w-100 my-4 lg:my-6 xl:my-9">
+          </div>
+          <div class="uc-footer-content">
+              <div class="container">
+                  <div class="uc-footer-inner vstack gap-4 lg:gap-6 xl:gap-8">
+                      <div class="uc-footer-widgets panel">
+                          <div class="row child-cols-6 sm:child-cols col-match g-4">
+                              <div class="col-12 sm:col-6">
+                                  <div class="panel vstack items-start gap-3 xl:gap-4 xl:w-350px">
+                                      <a href="/html/lexend/main/index-13" style="width: 140px">
+                                          <img class="text-primary dark:text-white" src="../assets/images/common/logo-12-light.svg" alt="Lexend" data-uc-svg="" hidden=""><svg width="150" height="38" viewBox="0 0 150 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-primary dark:text-white uc-svg">
+<path d="M19.2895 19.7105V19.2105H18.7895H5.78947V18.2688C12.1688 16.6893 17.1893 11.6688 18.7688 5.28947H19.7105V18.2895V18.7895H20.2105H33.2105V19.7312C26.8312 21.3107 21.8107 26.3312 20.2312 32.7105H19.2895V19.7105ZM1.5 14H1V14.5V23.5V24H1.5H14.5V37V37.5H15H24H24.5V37C24.5 29.8204 30.3204 24 37.5 24H38V23.5V14.5V14H37.5H24.5V1V0.5H24H15H14.5V1C14.5 8.17965 8.67965 14 1.5 14Z" fill="#121212" stroke="#121212"></path>
+<path d="M52.656 7.224C54.512 7.224 55.856 7.26667 56.688 7.352C57.52 7.416 58.1173 7.576 58.48 7.832C58.864 8.088 59.056 8.504 59.056 9.08C59.056 9.5493 58.96 10.168 58.768 10.936L55.792 23.736C55.6 24.6533 55.504 25.208 55.504 25.4C55.504 25.7413 55.6107 25.9547 55.824 26.04C56.0587 26.1253 56.5173 26.168 57.2 26.168H58.352L57.488 30.264H53.776C52.4107 30.264 51.44 30.0827 50.864 29.72C50.288 29.3573 50 28.6853 50 27.704C50 27.1067 50.096 26.3813 50.288 25.528L53.2 13.048C53.3493 12.408 53.424 12.0133 53.424 11.864C53.424 11.608 53.3173 11.4587 53.104 11.416C52.912 11.352 52.4747 11.32 51.792 11.32L52.656 7.224ZM58.7708 21.816C59.0694 20.1093 59.7201 18.584 60.7228 17.24C61.7468 15.8747 63.0481 14.808 64.6268 14.04C66.2268 13.2507 67.9974 12.856 69.9388 12.856C71.0908 12.856 72.1361 13.048 73.0748 13.432C74.0348 13.7947 74.7921 14.3067 75.3468 14.968C75.9228 15.608 76.2108 16.344 76.2108 17.176C76.2108 17.3253 76.1894 17.528 76.1468 17.784C75.8054 19.7253 74.4828 21.1653 72.1788 22.104C69.8748 23.0213 66.9521 23.48 63.4108 23.48C63.4534 25.6133 64.6054 26.68 66.8668 26.68C67.6988 26.68 68.4774 26.456 69.2028 26.008C69.9494 25.56 70.4614 25.016 70.7388 24.376H75.7308C75.2828 25.5707 74.5788 26.6587 73.6188 27.64C72.6801 28.6 71.5708 29.368 70.2908 29.944C69.0108 30.4987 67.6774 30.776 66.2908 30.776C63.7094 30.776 61.7788 30.1467 60.4988 28.888C59.2188 27.6293 58.5788 25.9547 58.5788 23.864C58.5788 23.2027 58.6428 22.52 58.7708 21.816ZM63.8908 20.408C66.1948 20.408 67.9121 20.248 69.0428 19.928C70.1734 19.5867 70.8134 18.968 70.9628 18.072C71.0268 17.6453 70.8774 17.2933 70.5148 17.016C70.1521 16.7173 69.6721 16.568 69.0748 16.568C67.7094 16.568 66.5894 16.952 65.7148 17.72C64.8614 18.4667 64.2534 19.3627 63.8908 20.408ZM77.1878 13.368H82.9478L84.3558 17.56C84.4624 17.88 84.5158 18.168 84.5158 18.424C84.5158 18.5307 84.4944 18.6907 84.4518 18.904L84.4198 19.128C84.4198 19.4267 84.5584 19.576 84.8358 19.576C85.1771 19.576 85.3904 19.352 85.4758 18.904C85.6038 18.4347 85.8278 17.9867 86.1478 17.56L89.3478 13.368H95.1078L87.9078 21.432L92.0358 30.264H86.2758L84.5158 25.272C84.4091 24.9947 84.3558 24.728 84.3558 24.472C84.3558 24.3227 84.3771 24.1413 84.4198 23.928L84.4518 23.672C84.4518 23.3947 84.3131 23.256 84.0358 23.256C83.8438 23.256 83.7051 23.32 83.6198 23.448C83.5344 23.5547 83.4598 23.7147 83.3958 23.928C83.2038 24.504 82.9798 24.952 82.7238 25.272L78.8518 30.264H73.0917L80.9958 21.432L77.1878 13.368ZM93.052 21.816C93.3507 20.1093 94.0013 18.584 95.004 17.24C96.028 15.8747 97.3293 14.808 98.908 14.04C100.508 13.2507 102.279 12.856 104.22 12.856C105.372 12.856 106.417 13.048 107.356 13.432C108.316 13.7947 109.073 14.3067 109.628 14.968C110.204 15.608 110.492 16.344 110.492 17.176C110.492 17.3253 110.471 17.528 110.428 17.784C110.087 19.7253 108.764 21.1653 106.46 22.104C104.156 23.0213 101.233 23.48 97.692 23.48C97.7347 25.6133 98.8867 26.68 101.148 26.68C101.98 26.68 102.759 26.456 103.484 26.008C104.231 25.56 104.743 25.016 105.02 24.376H110.012C109.564 25.5707 108.86 26.6587 107.9 27.64C106.961 28.6 105.852 29.368 104.572 29.944C103.292 30.4987 101.959 30.776 100.572 30.776C97.9907 30.776 96.06 30.1467 94.78 28.888C93.5 27.6293 92.86 25.9547 92.86 23.864C92.86 23.2027 92.924 22.52 93.052 21.816ZM98.172 20.408C100.476 20.408 102.193 20.248 103.324 19.928C104.455 19.5867 105.095 18.968 105.244 18.072C105.308 17.6453 105.159 17.2933 104.796 17.016C104.433 16.7173 103.953 16.568 103.356 16.568C101.991 16.568 100.871 16.952 99.996 17.72C99.1427 18.4667 98.5347 19.3627 98.172 20.408ZM118.394 13.368L117.786 16.28C117.68 16.792 117.445 17.3467 117.082 17.944C116.72 18.5413 116.506 18.904 116.442 19.032C116.378 19.16 116.346 19.2773 116.346 19.384C116.346 19.5333 116.41 19.6293 116.538 19.672C116.581 19.6933 116.634 19.704 116.698 19.704C116.805 19.704 116.901 19.672 116.986 19.608C117.072 19.5227 117.125 19.448 117.146 19.384C118.128 17.592 119.354 16.056 120.826 14.776C122.32 13.496 123.877 12.856 125.498 12.856C126.693 12.856 127.536 13.112 128.026 13.624C128.538 14.1147 128.794 14.904 128.794 15.992C128.794 16.952 128.581 18.4667 128.154 20.536L126.074 30.264H120.954L122.778 21.688C123.141 20.0667 123.322 18.936 123.322 18.296C123.322 17.8693 123.237 17.56 123.066 17.368C122.917 17.176 122.661 17.08 122.298 17.08C121.701 17.08 120.901 17.7093 119.898 18.968C118.896 20.2053 117.946 21.7093 117.05 23.48C116.154 25.2293 115.546 26.8187 115.226 28.248L114.81 30.264H109.69L113.274 13.368H118.394ZM129.3 22.2C129.662 20.5147 130.324 18.9573 131.284 17.528C132.244 16.0987 133.417 14.968 134.804 14.136C136.19 13.2827 137.662 12.856 139.22 12.856C140.158 12.856 140.905 13.0587 141.46 13.464C142.036 13.8693 142.526 14.4027 142.932 15.064C143.038 15.2133 143.134 15.32 143.22 15.384C143.305 15.448 143.422 15.448 143.572 15.384C143.764 15.2773 143.86 15.1387 143.86 14.968C143.86 14.904 143.838 14.808 143.796 14.68C143.582 14.2107 143.476 13.8587 143.476 13.624C143.476 13.5387 143.497 13.368 143.54 13.112L144.788 7.224H149.908L146.708 22.328C146.366 23.8853 146.121 25.1227 145.972 26.04C145.822 26.936 145.748 27.704 145.748 28.344C145.748 29.0053 145.844 29.6453 146.036 30.264H140.852C140.745 29.8373 140.692 29.4747 140.692 29.176C140.692 28.6213 140.788 28.1093 140.98 27.64C141.172 27.1493 141.438 26.6267 141.78 26.072C141.95 25.816 142.068 25.624 142.132 25.496C142.196 25.368 142.228 25.2613 142.228 25.176C142.228 25.048 142.164 24.952 142.036 24.888C142.014 24.8667 141.961 24.856 141.876 24.856C141.79 24.856 141.694 24.888 141.588 24.952C141.502 24.9947 141.449 25.0587 141.428 25.144C139.358 28.8987 136.905 30.776 134.068 30.776C132.596 30.776 131.39 30.2213 130.452 29.112C129.513 28.0027 129.044 26.52 129.044 24.664C129.044 23.7893 129.129 22.968 129.3 22.2ZM134.388 22.392C134.281 22.968 134.228 23.4373 134.228 23.8C134.228 24.6533 134.42 25.304 134.804 25.752C135.209 26.2 135.732 26.424 136.372 26.424C137.182 26.424 137.982 26.1147 138.772 25.496C139.561 24.8773 140.265 24.0027 140.884 22.872C141.502 21.72 141.972 20.408 142.292 18.936C141.865 18.296 141.438 17.848 141.012 17.592C140.585 17.336 140.03 17.208 139.348 17.208C138.11 17.208 137.054 17.6773 136.18 18.616C135.326 19.5333 134.729 20.792 134.388 22.392Z" fill="#121212"></path>
+</svg>
+                                      </a>
+                                  </div>
+                              </div>
+                              <div>
+                                  <ul class="nav-y gap-2 fs-6 xl:fs-5">
+                                      <li><a href="/html/lexend/main/page-integrations">Products</a></li>
+                                      <li><a href="/html/lexend/main/page-features">Features</a></li>
+                                      <li><a href="/html/lexend/main/page-pricing-2">Pricing</a></li>
+                                      <li><a href="/html/lexend/main/page-about">About</a></li>
+                                  </ul>
+                              </div>
+                              <div>
+                                  <ul class="nav-y gap-2 fs-6 xl:fs-5">
+                                      <li><a href="/html/lexend/main/blog-sidebar">Blog</a></li>
+                                      <li><a href="/html/lexend/main/blog">Ressources</a></li>
+                                      <li><a href="/html/lexend/main/page-contact">Support</a></li>
+                                      <li><a href="/html/lexend/main/sign-in">Client Portal</a></li>
+                                  </ul>
+                              </div>
+                              <div class="col-12 lg:col-auto">
+                                  <div class="panel">
+                                      <ul class="social-icons nav-x gap-0">
+                                          <li>
+                                              <a class="w-40px h-40px d-inline-flex justify-center items-center transition-all duration-200 ease-in hover:scale-110" href="https://themeforest.net/user/unistudioco"><i class="unicon-logo-instagram icon-3"></i></a>
+                                          </li>
+                                          <li>
+                                              <a class="w-40px h-40px d-inline-flex justify-center items-center transition-all duration-200 ease-in hover:scale-110" href="https://facebook.com/unistudioinc"><i class="unicon-logo-facebook icon-3"></i></a>
+                                          </li>
+                                          <li>
+                                              <a class="w-40px h-40px d-inline-flex justify-center items-center transition-all duration-200 ease-in hover:scale-110" href="https://dribbble.com/unistudioinc"><i class="unicon-logo-x-filled icon-3"></i></a>
+                                          </li>
+                                          <li>
+                                              <a class="w-40px h-40px d-inline-flex justify-center items-center transition-all duration-200 ease-in hover:scale-110" href="https://unistudio.co/unicore/"><i class="unicon-logo-linkedin icon-3"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="uc-footer-bottom panel vstack sm:hstack gap-2 justify-between items-center text-center pt-4 border-top text-gray-400 dark:text-gray-200">
+                          <p>Lexend © 2025, All rights reserved.</p>
+                          <ul class="nav-x gap-1">
+                              <li><a href="/html/lexend/main/page-privacy">Privacy policy</a></li>
+                              <li class="mx-2 lg:mx-3"><a href="/html/lexend/main/page-terms">Terms of use</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
 
     <!-- Footer end -->
 
