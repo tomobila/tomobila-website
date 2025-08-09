@@ -100,9 +100,9 @@
     --bs-tertiary-900-rgb: 46, 51, 45;
     --color-tertiary-950: rgb(22.8, 25.4, 22.7);
     --bs-tertiary-950-rgb: 23, 25, 23;
-    --color-quaternary: #F1FFDC;
+    --color-quaternary: #dff0f9;
     --bs-quaternary-rgb: 241, 255, 220;
-    --color-quaternary-: #F1FFDC;
+    --color-quaternary-: #dff0f9;
     --bs-quaternary--rgb: 241, 255, 220;
     --color-quaternary-10: rgb(254.58, 255, 253.95);
     --bs-quaternary-10-rgb: 255, 255, 254;
@@ -118,7 +118,7 @@
     --bs-quaternary-300-rgb: 247, 255, 234;
     --color-quaternary-400: rgb(243.8, 255, 227);
     --bs-quaternary-400-rgb: 244, 255, 227;
-    --color-quaternary-500: #F1FFDC;
+    --color-quaternary-500: #dff0f9;
     --bs-quaternary-500-rgb: 241, 255, 220;
     --color-quaternary-600: rgb(192.8, 204, 176);
     --bs-quaternary-600-rgb: 193, 204, 176;
@@ -275,11 +275,11 @@
 }
 
 .to-quaternary {
-    --uc-gradient-to: #F1FFDC
+    --uc-gradient-to: #dff0f9
 }
 
 .from-quaternary {
-    --uc-gradient-from: #F1FFDC;
+    --uc-gradient-from: #dff0f9;
     --uc-gradient-stops: var(--uc-gradient-from), var(--uc-gradient-to)
 }
 
