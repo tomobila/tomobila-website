@@ -202,7 +202,7 @@
 }
 
 .from-primary {
-    --uc-gradient-from: #16A34A;
+    --uc-gradient-from: #dff0f9;
     --uc-gradient-stops: var(--uc-gradient-from), var(--uc-gradient-to)
 }
 
@@ -228,7 +228,7 @@
 }
 
 .from-secondary {
-    --uc-gradient-from: #F3F8F2;
+    --uc-gradient-from: #dff0f9;
     --uc-gradient-stops: var(--uc-gradient-from), var(--uc-gradient-to)
 }
 
