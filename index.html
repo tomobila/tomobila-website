@@ -77,6 +77,13 @@
   <!-- include main style -->
   <link rel="stylesheet" href="./assets/css/theme/theme-four.min.purge.css" />
 
+  <!-- Custom styles to fix navigation hover -->
+  <style>
+    .uc-navbar-nav>li:hover>a {
+      color: #fff !important;
+    }
+  </style>
+
   <!-- include scripts -->
   <script src="./assets/js/uni-core/js/uni-core-bundle.min.js"></script>
   <script defer src="https://cloud.umami.is/script.js" data-website-id="9217a239-400b-43f8-b155-2eb2dbfd6923"></script>
@@ -176,7 +183,7 @@
         </div>
         <button
           class="uc-offcanvas-close rtl:end-auto rtl:start-0 m-1 mt-2 icon-3 btn border-0 dark:text-white dark:text-opacity-50 hover:text-primary hover:rotate-90 duration-150 transition-all"
-          type="button">
+          type="button" aria-label="Fermer le menu de navigation">
           <i class="unicon-close"></i>
         </button>
       </header>
@@ -184,27 +191,28 @@
       <div class="panel">
 
         <ul class="nav-y gap-narrow fw-medium fs-6" data-uc-nav>
-          <li><a href="page-features.html">Fonctionnalités</a></li>
-          <li><a href="page-pricing.html">Tarifs</a></li>
-          <li><a href="page-contact.html">Contact</a></li>
-          <li class="uc-parent">
+          <li><a href="#" class="hover:text-gray-600 dark:hover:text-gray-300 duration-150 d-block">Fonctionnalités</a>
+          </li>
+          <li><a href="#" class="hover:text-gray-600 dark:hover:text-gray-300 duration-150 d-block">Tarifs</a></li>
+          <li><a href="#" class="hover:text-gray-600 dark:hover:text-gray-300 duration-150 d-block">Blog</a></li>
+          <li><a href="#" class="hover:text-gray-600 dark:hover:text-gray-300 duration-150 d-block">À propos</a></li>
 
-            <ul class="uc-nav-sub" data-uc-nav="">
+          <li class="hr opacity-10 my-3"></li>
 
-
-
-              <li class="uc-parent">
-                <a href="index.html#">Autres pages</a>
-                <ul class="uc-nav-sub">
-                  <li><a href="page-faq.html">FAQ</a></li>
-                  <li><a href="page-terms.html">Conditions d'utilisation</a></li>
-                  <li><a href="page-privacy.html">Politique de confidentialité</a></li>
-                </ul>
-              </li>
-            </ul>
+          <!-- Login button for mobile -->
+          <li><a href="https://app.tomobila.com" target="_blank"
+              class="btn btn-md btn-primary text-white mt-2 w-100 hover:bg-primary-600 duration-150">Se connecter</a>
           </li>
 
-          <li class="hr opacity-10 my-1"></li>
+          <li class="uc-parent">
+            <a href="index.html#">Autres pages</a>
+            <ul class="uc-nav-sub" data-uc-nav="">
+              <li><a href="page-contact.html">Contact</a></li>
+              <li><a href="page-faq.html">FAQ</a></li>
+              <li><a href="page-terms.html">Conditions d'utilisation</a></li>
+              <li><a href="page-privacy.html">Politique de confidentialité</a></li>
+            </ul>
+          </li>
 
         </ul>
         <ul class="social-icons nav-x mt-4">
@@ -295,15 +303,7 @@
 
   <!--  Bottom Actions Sticky -->
   <div class="backtotop-wrap position-fixed bottom-0 end-0 z-99 m-2 vstack">
-    <!-- <div
-      class="darkmode-trigger cstack w-40px h-40px rounded-circle text-none bg-gray-100 dark:bg-gray-700 dark:text-white"
-      data-darkmode-toggle="">
-      <label class="switch">
-        <span class="sr-only">Basculer le mode sombre</span>
-        <input type="checkbox" />
-        <span class="slider fs-5"></span>
-      </label>
-    </div> -->
+
     <a class="btn btn-sm bg-primary text-white w-40px h-40px rounded-circle"
       href="https://unistudio.co/html/Tomobila/main/to_top" data-uc-backtotop>
       <i class="icon-2 unicon-chevron-up"></i>
@@ -1159,29 +1159,30 @@
                 </a>
               </div>
             </div>
-            <div class="uc-navbar-center d-none xl:d-flex text-white">
-              <ul class="uc-navbar-nav gap-4 xl:gap-5 d-none lg:d-flex fs-5 fw-bold" style="--uc-nav-height: 48px"
+            <div class="uc-navbar-center d-none md:d-flex text-white">
+              <ul class="uc-navbar-nav gap-4 xl:gap-5 d-flex fs-5 fw-bold" style="--uc-nav-height: 48px"
                 data-uc-scrollspy-nav="closest: li; offset: 40; scroll: true">
                 <li>
-                  <a href="#">Fonctionnalités</a>
+                  <a href="#" class="hover:text-white duration-150">Fonctionnalités</a>
                 </li>
                 <li>
-                  <a href="#">Tarifs</a>
+                  <a href="#" class="hover:text-white duration-150">Tarifs</a>
                 </li>
                 <li>
-                  <a href="#">Blog</a>
+                  <a href="#" class="hover:text-white duration-150">Blog</a>
                 </li>
                 <li>
-                  <a href="#">À propos</a>
+                  <a href="#" class="hover:text-white duration-150">À propos</a>
                 </li>
               </ul>
             </div>
             <div class="uc-navbar-right">
-              <a class="btn btn-md btn-tertiary dark:bg-white dark:text-dark border fs-5 lg:px-3 d-none lg:d-inline-flex shadow-xs"
-                href="https://app.tomobila.com" target="_blank">
-                Se connecter
+              <a class="btn btn-sm btn-primary text-white text-none d-none md:d-inline-flex" href="#uc-newsletter-modal"
+                data-uc-toggle>
+                Essai gratuit
               </a>
-              <div class="d-inline-block">
+
+              <!-- <div class="d-inline-block">
 
                 <a href="#" class="hstack gap-1 text-none fw-medium text-white" role="button" aria-haspopup="true">
                   <i class="icon icon-1 unicon-wikis fw-bold text-white"></i>
@@ -1192,13 +1193,17 @@
                   <ul class="nav-y items-center gap-1 fw-medium rtl:items-end">
                     <li><a href="/en">English</a></li>
                     <li><a href="/ar">العربية</a></li>
-                    <!-- <li><a href="#ch">中文</a></li> -->
                   </ul>
                 </div>
-              </div>
+              </div> -->
 
-              <a class="btn btn-md btn-tertiary w-48px h-48px d-inline-flex lg:d-none" href="index.html#uc-menu-panel"
-                data-uc-toggle="" role="button">
+              <a class="btn btn-md btn-tertiary dark:bg-white dark:text-dark border fs-5 lg:px-3 d-none lg:d-inline-flex shadow-xs hover:bg-tertiary-600 duration-150"
+                href="https://app.tomobila.com" target="_blank">
+                Se connecter
+              </a>
+
+              <a class="btn btn-md btn-tertiary w-48px h-48px d-flex md:d-none" href="index.html#uc-menu-panel"
+                data-uc-toggle="" role="button" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
                 <i class="icon icon-2 unicon-menu"></i>
               </a>
             </div>
@@ -1337,9 +1342,8 @@
               <h2 class="h3 md:h2 lg:display-5">
 
                 <span class="text-tertiary dark:text-primary">
-                  Simplifiez votre activité de location
+                  Simplifiez votre travail
                 </span>
-                de véhicules avec un system tout-en-un
               </h2>
 
               <p>
@@ -3447,29 +3451,25 @@
                         <p class="m-0">Tomobila © 2025, Tous droits réservés.</p>
                         <ul class="nav-x gap-2">
                           <li>
-                            <a class="duration-150 hover:text-primary" href="index.html#"><i
+                            <a class="duration-150 hover:text-primary" href="https://www.linkedin.com/company/tomobila/"><i
                                 class="icon icon-2 unicon-logo-linkedin"></i></a>
                           </li>
                           <li>
-                            <a class="duration-150 hover:text-primary" href="index.html#"><i
+                            <a class="duration-150 hover:text-primary" href="https://www.facebook.com/Try.Tomobila/"><i
                                 class="icon icon-2 unicon-logo-facebook"></i></a>
                           </li>
-                          <li>
+                          <!-- <li>
                             <a class="duration-150 hover:text-primary" href="index.html#"><i
                                 class="icon icon-2 unicon-logo-x-filled"></i></a>
-                          </li>
-                          <li>
+                          </li> -->
+                          <!-- <li>
                             <a class="duration-150 hover:text-primary" href="index.html#"><i
                                 class="icon icon-2 unicon-logo-instagram"></i></a>
-                          </li>
-                          <li>
+                          </li> -->
+                          <!-- <li>
                             <a class="duration-150 hover:text-primary" href="index.html#"><i
                                 class="icon icon-2 unicon-logo-youtube"></i></a>
-                          </li>
-                          <li>
-                            <a class="duration-150 hover:text-primary" href="index.html#"><i
-                                class="icon icon-2 unicon-logo-dribbble"></i></a>
-                          </li>
+                          </li> -->
                         </ul>
                       </div>
                       <!-- Language selection commented out
