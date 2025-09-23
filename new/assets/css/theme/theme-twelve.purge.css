@@ -10,36 +10,36 @@
     --font-family-serif: serif, IBM Plex Sans Arabic, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     --radius: 4px;
     --border-radius: 4px;
-    --color-primary: #16A34A;
-    --bs-primary-rgb: 26, 73, 248;
-    --color-primary-: #16A34A;
-    --bs-primary--rgb: 22, 163, 74;
-    --color-primary-10: rgb(248.01, 252.24, 249.57);
-    --bs-primary-10-rgb: 248, 252, 250;
-    --color-primary-25: rgb(243.35, 250.4, 245.95);
-    --bs-primary-25-rgb: 243, 250, 246;
-    --color-primary-50: rgb(231.7, 245.8, 236.9);
-    --bs-primary-50-rgb: 26, 73, 248;
-    --color-primary-100: rgb(208.4, 236.6, 218.8);
-    --bs-primary-100-rgb: 208, 237, 219;
-    --color-primary-200: rgb(161.8, 218.2, 182.6);
-    --bs-primary-200-rgb: 162, 218, 183;
-    --color-primary-300: rgb(115.2, 199.8, 146.4);
-    --bs-primary-300-rgb: 115, 200, 146;
-    --color-primary-400: rgb(68.6, 181.4, 110.2);
-    --bs-primary-400-rgb: 69, 181, 110;
-    --color-primary-500: #16A34A;
-    --bs-primary-500-rgb: 22, 163, 74;
-    --color-primary-600: rgb(17.6, 130.4, 59.2);
-    --bs-primary-600-rgb: 18, 130, 59;
-    --color-primary-700: rgb(13.2, 97.8, 44.4);
-    --bs-primary-700-rgb: 13, 98, 44;
-    --color-primary-800: rgb(8.8, 65.2, 29.6);
-    --bs-primary-800-rgb: 9, 65, 30;
-    --color-primary-900: rgb(4.4, 32.6, 14.8);
-    --bs-primary-900-rgb: 4, 33, 15;
-    --color-primary-950: rgb(2.2, 16.3, 7.4);
-    --bs-primary-950-rgb: 2, 16, 7;
+    --color-primary: #1800ad;
+    --bs-primary-rgb: 24, 0, 173;
+    --color-primary-: #1800ad;
+    --bs-primary--rgb: 24, 0, 173;
+    --color-primary-10: rgb(248, 240, 253);
+    --bs-primary-10-rgb: 248, 240, 253;
+    --color-primary-25: rgb(243, 232, 252);
+    --bs-primary-25-rgb: 243, 232, 252;
+    --color-primary-50: rgb(233, 213, 249);
+    --bs-primary-50-rgb: 233, 213, 249;
+    --color-primary-100: rgb(196, 165, 238);
+    --bs-primary-100-rgb: 196, 165, 238;
+    --color-primary-200: rgb(147, 107, 216);
+    --bs-primary-200-rgb: 147, 107, 216;
+    --color-primary-300: rgb(98, 49, 194);
+    --bs-primary-300-rgb: 98, 49, 194;
+    --color-primary-400: rgb(61, 24, 184);
+    --bs-primary-400-rgb: 61, 24, 184;
+    --color-primary-500: #1800ad;
+    --bs-primary-500-rgb: 24, 0, 173;
+    --color-primary-600: rgb(19, 0, 138);
+    --bs-primary-600-rgb: 19, 0, 138;
+    --color-primary-700: rgb(14, 0, 104);
+    --bs-primary-700-rgb: 14, 0, 104;
+    --color-primary-800: rgb(10, 0, 69);
+    --bs-primary-800-rgb: 10, 0, 69;
+    --color-primary-900: rgb(5, 0, 35);
+    --bs-primary-900-rgb: 5, 0, 35;
+    --color-primary-950: rgb(2, 0, 17);
+    --bs-primary-950-rgb: 2, 0, 17;
     --color-secondary: #F3F8F2;
     --bs-secondary-rgb: 243, 248, 242;
     --color-secondary-: #F3F8F2;
@@ -279,7 +279,7 @@
 }
 
 .from-quaternary {
-    --uc-gradient-from: #dff0f9;
+    --uc-gradient-from: #1800ad;
     --uc-gradient-stops: var(--uc-gradient-from), var(--uc-gradient-to)
 }
 
@@ -1163,8 +1163,8 @@ h6 {
     --bs-btn-active-border-color: rgb(13.2, 97.8, 44.4);
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #16A34A;
-    --bs-btn-disabled-border-color: #16A34A
+    --bs-btn-disabled-bg: #1800ad;
+    --bs-btn-disabled-border-color: #1800ad
 }
 
 .btn-primary-200 {
@@ -1202,42 +1202,42 @@ h6 {
 }
 
 .btn-outline-primary {
-    --bs-btn-color: #16A34A;
-    --bs-btn-border-color: #16A34A;
+    --bs-btn-color: #1800ad;
+    --bs-btn-border-color: #1800ad;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #16A34A;
-    --bs-btn-hover-border-color: #16A34A;
+    --bs-btn-hover-bg: #1800ad;
+    --bs-btn-hover-border-color: #1800ad;
     --bs-btn-focus-shadow-rgb: 22, 163, 74;
     --bs-btn-active-color: #fff;
     --bs-btn-active-bg: rgb(13.2, 97.8, 44.4);
     --bs-btn-active-border-color: rgb(13.2, 97.8, 44.4);
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #16A34A;
+    --bs-btn-disabled-color: #1800ad;
     --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #16A34A;
+    --bs-btn-disabled-border-color: #1800ad;
     --bs-gradient: none
 }
 
 .btn-alt-primary {
     background: #fff !important;
-    color: #16a34a !important
+    color: #1800ad !important
 }
 
 .btn-alt-primary:focus,
 .btn-alt-primary:hover {
-    background: #16a34a !important;
+    background: #1800ad !important;
     color: #fff !important
 }
 
 .btn-ghost-primary {
-    background: rgb(231.7, 245.8, 236.9) !important;
-    color: #16a34a !important
+    background: rgb(233, 213, 249) !important;
+    color: #1800ad !important
 }
 
 .btn-ghost-primary:focus,
 .btn-ghost-primary:hover {
-    background: rgb(208.4, 236.6, 218.8) !important;
-    color: #16a34a !important
+    background: rgb(196, 165, 238) !important;
+    color: #1800ad !important
 }
 
 .btn-secondary {
