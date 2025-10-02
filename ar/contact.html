@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - توموبيلا</title>
+    <meta name="description" content="تواصل معنا في توموبيلا لإدارة الأسطول الذكية. فريقنا المتخصص جاهز للإجابة على استفساراتك وتقديم الدعم.">
+    <meta name="keywords" content="اتصل بنا، دعم العملاء، إدارة الأسطول، توموبيلا">
+    
+    <!-- Preload CSS -->
+    <link rel="preload" href="../assets/css/unicons.min.css" as="style">
+    <link rel="preload" href="../assets/css/swiper-bundle.min.css" as="style">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/unicons.min.css">
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/main.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body class="uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden">
+
+    <!-- GDPR Modal -->
+    <div id="uc-gdpr-notification" class="uc-gdpr-notification hide-on-load" data-uc-modal="overlay: false; bg-close: false; esc-close: false;">
+        <div class="uc-modal-dialog w-auto m-2">
+            <div class="uc-modal-body panel vstack gap-2 p-4 rounded-2 bg-white dark:bg-gray-800 shadow-xs">
+                <h4 class="h6 m-0">نحن نستخدم ملفات تعريف الارتباط</h4>
+                <p class="fs-7 opacity-70">نحن نستخدم ملفات تعريف الارتباط لتحسين تجربتك على موقعنا.</p>
+                <div class="hstack gap-1 mt-1">
+                    <button class="btn btn-sm btn-primary" type="button" data-uc-modal-close>موافق</button>
+                    <a href="privacy.html" class="btn btn-sm btn-outline-gray">سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="uc-search-modal" data-uc-modal="overlay: false;">
+        <div class="uc-modal-dialog w-100 h-100 m-0 p-0">
+            <div class="uc-modal-body panel vstack justify-center items-center gap-4 p-4 bg-white dark:bg-gray-900">
+                <button class="uc-modal-close-default position-absolute top-0 end-0 m-2 p-0 border-0 bg-transparent" type="button" data-uc-modal-close>
+                    <i class="icon icon-2 unicon-close"></i>
+                </button>
+                <form class="hstack gap-1 mt-4 border-bottom p-narrow dark:border-gray-700" action="?">
+                    <i class="icon icon-1 unicon-search text-gray-700 dark:text-gray-300"></i>
+                    <input type="search" name="q" class="form-control-plaintext ms-1 fs-6 sm:fs-5 w-full dark:text-white" placeholder="اكتب كلمتك المفتاحية.." aria-label="البحث" autofocus>
+                </form>
+                <div class="panel w-100 sm:w-auto">
+                    <h6 class="ft-tertiary fw-bold text-gray-900 dark:text-white mb-2">البحث الشائع</h6>
+                    <div class="panel">
+                        <div class="row child-cols g-1">
+                            <div><a href="#" class="btn btn-sm btn-outline-gray rounded-default">إدارة الأسطول</a></div>
+                            <div><a href="#" class="btn btn-sm btn-outline-gray rounded-default">تتبع المركبات</a></div>
+                            <div><a href="#" class="btn btn-sm btn-outline-gray rounded-default">التحليلات</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Modal -->
+    <div id="uc-newsletter-modal" data-uc-modal="overlay: false;">
+        <div class="uc-modal-dialog w-auto m-2">
+            <div class="uc-modal-body panel vstack gap-4 p-4 rounded-2 bg-white dark:bg-gray-800 shadow-xs">
+                <button class="uc-modal-close-default position-absolute top-0 end-0 m-2 p-0 border-0 bg-transparent" type="button" data-uc-modal-close>
+                    <i class="icon icon-1 unicon-close"></i>
+                </button>
+                <div class="vstack gap-2">
+                    <h4 class="h5 m-0">اشترك في نشرتنا الإخبارية</h4>
+                    <p class="fs-7 opacity-70">احصل على آخر التحديثات والأخبار مباشرة في بريدك الإلكتروني.</p>
+                </div>
+                <form class="vstack gap-1">
+                    <input type="email" class="form-control form-control-sm w-full fs-6 bg-white dark:border-white dark:border-gray-700" placeholder="عنوان بريدك الإلكتروني..">
+                    <button type="submit" class="btn btn-sm btn-primary">اشتراك</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Modal -->
+    <div id="uc-account-modal" data-uc-modal="overlay: false;">
+        <div class="uc-modal-dialog w-auto m-2">
+            <div class="uc-modal-body panel p-0 rounded-2 bg-white dark:bg-gray-800 shadow-xs overflow-hidden">
+                <div class="panel p-4">
+                    <div class="hstack justify-between items-center gap-4 mb-4">
+                        <h4 class="h5 m-0">تسجيل الدخول</h4>
+                        <button class="uc-modal-close-default p-0 border-0 bg-transparent" type="button" data-uc-modal-close>
+                            <i class="icon icon-1 unicon-close"></i>
+                        </button>
+                    </div>
+                    <form class="vstack gap-2">
+                        <input class="form-control h-48px w-full bg-white dark:border-white dark:text-dark" type="email" placeholder="بريدك الإلكتروني" required>
+                        <input class="form-control h-48px w-full bg-white dark:border-white dark:text-dark" type="password" placeholder="كلمة المرور" required>
+                        <div class="hstack justify-between items-center gap-1">
+                            <label class="form-check-label hstack gap-narrow">
+                                <input class="form-check-input rounded-0 dark:bg-gray-900 dark:text-white dark:border-gray-700" type="checkbox" id="inputCheckRemember">
+                                <span class="fs-7">تذكرني</span>
+                            </label>
+                            <a href="#" class="uc-link fs-7">نسيت كلمة المرور؟</a>
+                        </div>
+                        <button class="btn btn-primary btn-md text-white lg:mt-2" type="submit">تسجيل الدخول</button>
+                    </form>
+                    <div class="panel pt-3 mt-3 border-top">
+                        <p class="fs-7 text-center">ليس لديك حساب؟ <a href="#" class="uc-link" data-uc-switcher-item="1">إنشاء حساب</a></p>
+                    </div>
+                </div>
+                <div class="panel p-4">
+                    <div class="hstack justify-between items-center gap-4 mb-4">
+                        <h4 class="h5 m-0">إنشاء حساب</h4>
+                        <button class="uc-modal-close-default p-0 border-0 bg-transparent" type="button" data-uc-modal-close>
+                            <i class="icon icon-1 unicon-close"></i>
+                        </button>
+                    </div>
+                    <form class="vstack gap-2">
+                        <input class="form-control h-48px w-full bg-white dark:border-white dark:text-dark" type="text" placeholder="الاسم الكامل" required>
+                        <input class="form-control h-48px w-full bg-white dark:border-white dark:text-dark" type="email" placeholder="بريدك الإلكتروني" required>
+                        <input class="form-control h-48px w-full bg-white dark:border-white dark:text-dark" type="password" placeholder="كلمة المرور" required>
+                        <input class="form-control h-48px w-full bg-white dark:border-white dark:text-dark" type="password" placeholder="إعادة إدخال كلمة المرور" required>
+                        <label class="form-check-label hstack gap-narrow">
+                            <input class="form-check-input rounded-0 dark:bg-gray-900 dark:text-white dark:border-gray-700" type="checkbox" required>
+                            <label class="hstack justify-between form-check-label fs-7 sm:fs-6">أقرأ وأوافق على <a href="#" class="uc-link ltr:ms-narrow rtl:me-narrow" data-uc-switcher-item="3">شروط الاستخدام</a>. </label>
+                        </label>
+                        <button class="btn btn-primary btn-md text-white lg:mt-2" type="submit">إنشاء حساب</button>
+                    </form>
+                    <div class="panel pt-3 mt-3 border-top">
+                        <p class="fs-7 text-center">لديك حساب بالفعل؟ <a href="#" class="uc-link" data-uc-switcher-item="0">تسجيل الدخول</a></p>
+                    </div>
+                </div>
+                <div class="panel p-4">
+                    <div class="hstack justify-between items-center gap-4 mb-4">
+                        <h4 class="h5 m-0">استعادة كلمة المرور</h4>
+                        <button class="uc-modal-close-default p-0 border-0 bg-transparent" type="button" data-uc-modal-close>
+                            <i class="icon icon-1 unicon-close"></i>
+                        </button>
+                    </div>
+                    <form class="vstack gap-2">
+                        <input class="form-control h-48px w-full bg-white dark:border-white dark:text-dark" type="email" placeholder="بريدك الإلكتروني" required>
+                        <label class="form-check-label hstack gap-narrow">
+                            <input class="form-check-input rounded-0 dark:bg-gray-900 dark:text-white dark:border-gray-700" type="checkbox" id="inputCheckVerify" required>
+                            <span class="fs-7">لست روبوت</span>
+                        </label>
+                        <button class="btn btn-primary btn-md text-white lg:mt-2" type="submit">إعادة تعيين كلمة المرور</button>
+                    </form>
+                    <div class="panel pt-3 mt-3 border-top">
+                        <p class="fs-7 text-center">تذكرت كلمة المرور؟ <a href="#" class="uc-link" data-uc-switcher-item="0">تسجيل الدخول</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Panel -->
+    <div id="uc-menu-panel" data-uc-offcanvas="overlay: true; flip: true;">
+        <div class="uc-offcanvas-bar bg-white text-dark dark:bg-gray-900 dark:text-white">
+            <header class="uc-offcanvas-header hstack justify-between items-center pb-4 bg-white dark:bg-gray-900">
+                <div class="uc-logo">
+                    <a class='h5 text-none text-gray-900 dark:text-white' href='index.html'>
+                        <img class="w-32px" src="../assets/images/common/logo.svg" alt="توموبيلا">
+                    </a>
+                </div>
+                <button class="uc-offcanvas-close rtl:end-auto rtl:start-0 m-1 mt-2 icon-3 btn border-0 dark:text-white dark:text-opacity-50 hover:text-primary hover:rotate-90 duration-150 transition-all" type="button">
+                    <i class="unicon-close"></i>
+                </button>
+            </header>
+            <div class="panel">
+                <form id="search-panel" class="form-icon-group vstack gap-1 mb-2" data-uc-sticky="">
+                    <input type="email" class="form-control form-control-sm fs-7 rounded-default" placeholder="البحث..">
+                    <hr class="w-100 m-0">
+                </form>
+                <ul class="nav-y gap-narrow fw-medium">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li class="uc-parent">
+                        <a href="#">الميزات <span data-uc-navbar-parent-icon></span></a>
+                        <ul class="uc-nav-sub">
+                            <li><a href="#features">إدارة الأسطول الذكية</a></li>
+                            <li><a href="#analytics">التحليلات المتقدمة</a></li>
+                            <li><a href="#tracking">تتبع المركبات</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pricing.html">الأسعار</a></li>
+                    <li><a href="#">المدونة</a></li>
+                    <li><a href="#">حول</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                </ul>
+                <div class="panel pt-4 mt-4 border-top">
+                    <ul class="nav-y gap-1">
+                        <li><a href="#" class="btn btn-primary btn-sm text-white">تجربة مجانية</a></li>
+                        <li><a href="#" class="btn btn-outline-gray btn-sm" data-uc-modal-toggle="target: #uc-account-modal; pos: center;">تسجيل الدخول</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wrapper start -->
+    <div id="wrapper" class="wrap">
+
+        <!-- Header start -->
+        <header id="uc-header" class="uc-header header-default uc-navbar-sticky-wrap z-999" data-uc-sticky="start: 100; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent;">
+            <nav class="uc-navbar-container uc-navbar-float ft-tertiary z-1" data-anime="translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 750; delay: 0;">
+                <div class="container max-w-xl">
+                    <div class="uc-navbar min-h-64px lg:min-h-80px text-gray-900 dark:text-white" data-uc-navbar="{mode:'click', animation: 'uc-animation-slide-top-small', duration: 150}">
+                        <div class="uc-navbar-left">
+                            <div class="uc-logo text-dark dark:text-white text-opacity-90">
+                                <a class='h5 text-none text-gray-900 dark:text-white' href='index.html'>
+                                    <img class="w-32px" src="../assets/images/common/logo.svg" alt="توموبيلا">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="uc-navbar-center">
+                            <ul class="uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex">
+                                <li><a href="index.html">الرئيسية</a></li>
+                                <li class="uc-parent">
+                                    <a href="#">الميزات</a>
+                                    <div class="uc-navbar-dropdown ft-primary">
+                                        <ul class="uc-nav uc-navbar-dropdown-nav">
+                                            <li><a href="#features">إدارة الأسطول الذكية</a></li>
+                                            <li><a href="#analytics">التحليلات المتقدمة</a></li>
+                                            <li><a href="#tracking">تتبع المركبات</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="pricing.html">الأسعار</a></li>
+                                <li><a href="#">المدونة</a></li>
+                                <li><a href="#">حول</a></li>
+                                <li><a href="contact.html" class="text-primary">اتصل بنا</a></li>
+                            </ul>
+                        </div>
+                        <div class="uc-navbar-right">
+                            <div class="uc-navbar-item d-none sm:d-block">
+                                <a class='btn btn-primary btn-sm text-white' href='#'>تجربة مجانية</a>
+                            </div>
+                            <div class="uc-navbar-item d-none sm:d-block">
+                                <a class='btn btn-outline-gray btn-sm' href='#' data-uc-modal-toggle="target: #uc-account-modal; pos: center;">تسجيل الدخول</a>
+                            </div>
+                            <div class="uc-navbar-item">
+                                <a class="uc-navbar-toggle icon-3 btn border-0 dark:text-white dark:text-opacity-50 hover:text-primary hover:rotate-90 duration-150 transition-all" href="#uc-menu-panel" data-uc-offcanvas>
+                                    <i class="unicon-menu"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header end -->
+
+        <!-- Section start -->
+        <div id="hero_contact" class="hero-contact section panel overflow-hidden">
+            <div class="position-absolute top-0 start-0 end-0 min-h-600px bg-secondary dark:bg-opacity-0 z-0"></div>
+            <div class="position-absolute top-0 start-0 end-0 min-h-screen overflow-hidden d-none lg:d-block" data-anime="targets: >*; scale: [0, 1]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 750});">
+                <div class="position-absolute top-0 start-0 rotate-45" style="top: 30% !important; left: 18% !important">
+                    <img class="w-32px text-gray-900 dark:text-white" src="../assets/images/template/star-1.svg" alt="star-1" data-uc-svg>
+                </div>
+                <div class="position-absolute top-0 end-0 rotate-45" style="top: 15% !important; right: 18% !important">
+                    <img class="w-24px text-gray-900 dark:text-white" src="../assets/images/template/star-2.svg" alt="star-2" data-uc-svg>
+                </div>
+            </div>
+            <div class="section-outer panel pt-9 lg:pt-10 pb-6 sm:pb-8 lg:pb-9">
+                <div class="container max-w-xl">
+                    <div class="section-inner panel mt-2 sm:mt-4 lg:mt-0" data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});">
+                        <div class="vstack items-center gap-2 lg:gap-4 mb-4 sm:mb-6 lg:mb-8 max-w-750px mx-auto text-center">
+                            <h1 class="h2 sm:h1 lg:display-6 xl:display-5 m-0">اتصل بنا</h1>
+                            <p class="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">لا تتردد في التواصل معنا باستخدام الخيارات أدناه، وسيقوم فريقنا المتخصص بالرد على استفساراتك بسرعة.</p>
+                        </div>
+                        <div class="panel max-w-750px mx-auto">
+                            <form class="vstack gap-2 p-3 sm:p-6 xl:p-8 rounded-2 border bg-white dark:bg-gray-900 border-secondary dark:border-gray-300 dark:border-opacity-20">
+                                <p class="fs-6 text-dark dark:text-white text-opacity-70 mb-2">لديك سؤال أو ملاحظة؟ املأ النموذج أدناه، وسنعود إليك في أقرب وقت ممكن.</p>
+                                <div class="row child-cols-12 md:child-cols-6 g-2">
+                                    <div>
+                                        <input class="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-0 dark:border-opacity-15 dark:text-white" type="text" placeholder="الاسم الكامل" required>
+                                    </div>
+                                    <div>
+                                        <input class="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-0 dark:border-opacity-15 dark:text-white" type="email" placeholder="بريدك الإلكتروني" required>
+                                    </div>
+                                </div>
+                                <input class="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-0 dark:border-opacity-15 dark:text-white" type="text" placeholder="الموضوع">
+                                <textarea class="form-control min-h-150px w-full bg-white dark:border-white dark:bg-opacity-0 dark:border-opacity-15 dark:text-white" placeholder="رسالتك.." required></textarea>
+                                <button class="btn btn-primary btn-md text-white mt-2" type="submit">إرسال الرسالة</button>
+                                <p class="text-center">أو راسلنا عبر <a class="uc-link" href="mailto:hello@tomobila.com">البريد الإلكتروني</a>.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section end -->
+
+        <!-- Section start -->
+        <div id="helpful-links" class="section panel overflow-hidden">
+            <div class="section-outer panel pb-6 sm:pb-8 lg:pb-9">
+                <div class="container max-w-lg">
+                    <div class="section-inner panel">
+                        <div class="panel vstack gap-4 sm:gap-6 xl:gap-8">
+                            <h2 class="h4 sm:h3 lg:h2 m-0 text-center" data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;">طرق أخرى للتواصل معنا</h2>
+                            <div class="row child-cols-12 sm:child-cols-6 g-2 lg:g-4 justify-between col-match" data-anime="onview: -100; targets: > *; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});">
+                                <div>
+                                    <div class="panel hstack gap-2 lg:gap-3 items-center justify-between px-3 py-4 lg:p-4 rounded-2 bg-secondary dark:bg-gray-800 lg:hover:scale-105 duration-150 transition-all">
+                                        <div class="cstack w-64px h-64px lg:w-80px lg:h-80px rounded lg:rounded-2 bg-white dark:bg-gray-800">
+                                            <img class="w-32px lg:w-48px d-block dark:d-none" src="../assets/images/template/icon-location.svg" alt="location-icon">
+                                            <img class="w-32px lg:w-48px d-none dark:d-block" src="../assets/images/template/icon-location-dark.svg" alt="location-icon-dark">
+                                        </div>
+                                        <div class="vstack justify-center">
+                                            <h5 class="h6 lg:h6 lg:h5 m-0">مكتبنا</h5>
+                                            <p class="fs-7 lg:fs-6 opacity-70 dark:opacity-80">الرباط، المغرب</p>
+                                        </div>
+                                        <a href="#" class="uc-link fw-bold hstack gap-narrow">
+                                            <span>زيارة</span>
+                                            <i class="position-relative icon icon-1 unicon-arrow-left rtl:rotate-180 translate-y-px"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="panel hstack gap-2 lg:gap-3 items-center justify-between px-3 py-4 lg:p-4 rounded-2 bg-secondary dark:bg-gray-800 lg:hover:scale-105 duration-150 transition-all">
+                                        <div class="cstack w-80px h-80px rounded lg:rounded-2 bg-white dark:bg-gray-800">
+                                            <img class="w-48px d-block dark:d-none" src="../assets/images/template/icon-chat.svg" alt="chat-icon">
+                                            <img class="w-48px d-none dark:d-block" src="../assets/images/template/icon-chat-dark.svg" alt="chat-icon-dark">
+                                        </div>
+                                        <div class="vstack justify-center">
+                                            <h5 class="h6 lg:h5 m-0">عبر الدردشة</h5>
+                                            <p class="fs-7 lg:fs-6 opacity-70 dark:opacity-80">احصل على إجابات فورية.</p>
+                                        </div>
+                                        <a href="#" class="uc-link fw-bold hstack gap-narrow">
+                                            <span>دردشة</span>
+                                            <i class="position-relative icon icon-1 unicon-arrow-left rtl:rotate-180 translate-y-px"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="panel hstack gap-2 lg:gap-3 items-center justify-between px-3 py-4 lg:p-4 rounded-2 bg-secondary dark:bg-gray-800 lg:hover:scale-105 duration-150 transition-all">
+                                        <div class="cstack w-80px h-80px rounded lg:rounded-2 bg-white dark:bg-gray-800">
+                                            <img class="w-48px d-block dark:d-none" src="../assets/images/template/icon-internet.svg" alt="internet-icon">
+                                            <img class="w-48px d-none dark:d-block" src="../assets/images/template/icon-internet-dark.svg" alt="internet-icon-dark">
+                                        </div>
+                                        <div class="vstack justify-center">
+                                            <h5 class="h6 lg:h5 m-0">الإبلاغ عن مشكلة</h5>
+                                            <p class="fs-7 lg:fs-6 opacity-70 dark:opacity-80">احصل على دعم أولوية.</p>
+                                        </div>
+                                        <a href="#" class="uc-link fw-bold hstack gap-narrow">
+                                            <span>إرسال تقرير</span>
+                                            <i class="position-relative icon icon-1 unicon-arrow-left rtl:rotate-180 translate-y-px"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="panel hstack gap-2 lg:gap-3 items-center justify-between px-3 py-4 lg:p-4 rounded-2 bg-secondary dark:bg-gray-800 lg:hover:scale-105 duration-150 transition-all">
+                                        <div class="cstack w-80px h-80px rounded lg:rounded-2 bg-white dark:bg-gray-800">
+                                            <img class="w-48px d-block dark:d-none" src="../assets/images/template/icon-community.svg" alt="community-icon">
+                                            <img class="w-48px d-none dark:d-block" src="../assets/images/template/icon-community-dark.svg" alt="community-icon-dark">
+                                        </div>
+                                        <div class="vstack justify-center">
+                                            <h5 class="h6 lg:h5 m-0">مجتمعنا</h5>
+                                            <p class="fs-7 lg:fs-6 opacity-70 dark:opacity-80">تواصل مع المستخدمين.</p>
+                                        </div>
+                                        <a href="#" class="uc-link fw-bold hstack gap-narrow">
+                                            <span>انضم إلينا</span>
+                                            <i class="position-relative icon icon-1 unicon-arrow-left rtl:rotate-180 translate-y-px"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section end -->
+
+        <!-- Section start -->
+        <div id="faq" class="section panel overflow-hidden">
+            <div class="section-outer panel pb-7 sm:pb-8 xl:pb-9">
+                <div class="container max-w-lg">
+                    <div class="section-inner panel" data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});">
+                        <div class="panel">
+                            <h2 class="h4 sm:h3 lg:h2 m-0 text-center">الأسئلة الشائعة:</h2>
+                            <div class="panel mt-4 sm:mt-6 lg:mt-8 p-3 sm:p-4 xl:p-6 lg:max-w-750px xl:w-auto m-auto rounded-2 bg-secondary dark:bg-gray-800">
+                                <ul class="gap-4" data-uc-accordion="targets: > li;">
+                                    <li class="uc-open">
+                                        <a class="uc-accordion-title fs-5 sm:fs-4" href="#">هل أحتاج إلى معرفة البرمجة؟</a>
+                                        <div class="uc-accordion-content">
+                                            <p>لا، توموبيلا مصمم ليكون سهل الاستخدام للجميع. واجهتنا البديهية تتيح لك إدارة أسطولك دون الحاجة لأي خبرة تقنية.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="uc-accordion-title fs-5 sm:fs-4" href="#">هل يمكنني استخدامه للمشاريع التجارية؟</a>
+                                        <div class="uc-accordion-content">
+                                            <p>بالطبع! توموبيلا مصمم خصيصاً للشركات والمؤسسات التي تدير أساطيل مركبات. يمكنك استخدامه لإدارة أسطولك التجاري بكل ثقة.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="uc-accordion-title fs-5 sm:fs-4" href="#">هل يمكنني استخدامه لعدة مشاريع؟</a>
+                                        <div class="uc-accordion-content">
+                                            <p>نعم بالتأكيد! يمكنك إدارة عدة أساطيل ومشاريع مختلفة من خلال حساب واحد.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="uc-accordion-title fs-5 sm:fs-4" href="#">ما هي سياسة الاسترداد؟</a>
+                                        <div class="uc-accordion-content">
+                                            <p>نحن نتفهم أهمية رضا العملاء ونسعى لتقديم أفضل المنتجات والخدمات. نوفر ضمان استرداد لمدة 30 يوماً من تاريخ الشراء.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="uc-accordion-title fs-5 sm:fs-4" href="#">هل تقدمون دعم فني؟</a>
+                                        <div class="uc-accordion-content">
+                                            <p>نعم، نقدم دعم فني على مدار الساعة طوال أيام الأسبوع. فريقنا المتخصص جاهز لمساعدتك في أي وقت.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section end -->
+
+        <!-- Section start -->
+        <div id="clients_brands" class="clients-brands section panel overflow-hidden">
+            <div class="section-outer panel pb-8 sm:pb-9 xl:pb-9">
+                <h5 class="h6 sm:h5 text-center mb-4 sm:mb-6 xl:mb-8" data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 200;">موثوق من قبل علامات تجارية معروفة.</h5>
+                <div class="block-panel panel" data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 250;">
+                    <div class="element-brands max-w-950px m-auto text-gray-900 dark:text-white">
+                        <div class="swiper" data-uc-swiper="items: 2; center: true; center-bounds: true;" data-uc-swiper-s="items: 4; center: false; center-bounds: false;" data-uc-swiper-m="items: 5; gap: 80;">
+                            <div class="swiper-wrapper items-center ease-linear">
+                                <div class="brand-item swiper-slide text-center">
+                                    <img class="brand-item-image h-40px" src="../assets/images/brands/brand-01.svg" alt="Proline" data-uc-svg>
+                                </div>
+                                <div class="brand-item swiper-slide text-center">
+                                    <img class="brand-item-image h-40px" src="../assets/images/brands/brand-02.svg" alt="Iceberg" data-uc-svg>
+                                </div>
+                                <div class="brand-item swiper-slide text-center">
+                                    <img class="brand-item-image h-40px" src="../assets/images/brands/brand-03.svg" alt="PinPoint" data-uc-svg>
+                                </div>
+                                <div class="brand-item swiper-slide text-center">
+                                    <img class="brand-item-image h-40px" src="../assets/images/brands/brand-04.svg" alt="Clues" data-uc-svg>
+                                </div>
+                                <div class="brand-item swiper-slide text-center">
+                                    <img class="brand-item-image h-40px" src="../assets/images/brands/brand-05.svg" alt="Snowflake" data-uc-svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section end -->
+
+        <!-- Section start -->
+        <div id="blog_insights" class="blog-insights section panel overflow-hidden">
+            <div class="section-outer panel pb-6 sm:pb-8 lg:pb-9">
+                <div class="container max-w-lg">
+                    <div class="section-inner panel">
+                        <div class="panel vstack gap-4 sm:gap-6 xl:gap-8">
+                            <h2 class="h4 sm:h3 lg:h2 m-0 text-center" data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;">احصل على رؤى قيمة</h2>
+                            <div class="row child-cols-12 sm:child-cols-6 lg:child-cols-4 g-2 lg:g-4 col-match" data-anime="onview: -100; targets: > *; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});">
+                                <div>
+                                    <article class="post type-post panel vstack gap-2 lg:gap-3 p-2 lg:p-3 rounded-2 bg-secondary dark:bg-gray-800">
+                                        <div class="post-media panel overflow-hidden rounded">
+                                            <div class="featured-image bg-gray-25 dark:bg-gray-800 ratio ratio-3x2">
+                                                <img class="media-cover image" src="../assets/images/blog/img-01.jpg" alt="دليل إدارة الأسطول">
+                                            </div>
+                                        </div>
+                                        <header class="panel vstack items-center gap-1 lg:gap-2 px-2">
+                                            <h3 class="h5 xl:h4 m-0 text-center m-0">
+                                                <a class='text-none' href='#'>الدليل الشامل لإدارة الأسطول الناجحة</a>
+                                            </h3>
+                                            <ul class="post-meta nav-x ft-tertiary justify-center gap-1 fs-7 text-gray-400 dark:text-gray-300 d-none lg:d-flex">
+                                                <li>
+                                                    <div class="hstack gap-narrow ft-tertiary">
+                                                        <img src="../assets/images/avatars/01.png" alt="أحمد" class="w-24px h-24px rounded-circle me-narrow">
+                                                        <a href="#" class="text-none fw-bold text-dark dark:text-white">أحمد محمد</a>
+                                                    </div>
+                                                </li>
+                                                <li class="opacity-50">•</li>
+                                                <li>
+                                                    <div class="post-date hstack gap-narrow">
+                                                        <span>1 أبريل، 2024</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </header>
+                                    </article>
+                                </div>
+                                <div>
+                                    <article class="post type-post panel vstack gap-2 lg:gap-3 p-2 lg:p-3 rounded-2 bg-secondary dark:bg-gray-800">
+                                        <div class="post-media panel overflow-hidden rounded">
+                                            <div class="featured-image bg-gray-25 dark:bg-gray-800 ratio ratio-3x2">
+                                                <img class="media-cover image" src="../assets/images/blog/img-02.jpg" alt="تحليلات الأسطول">
+                                            </div>
+                                        </div>
+                                        <header class="panel vstack items-center gap-1 lg:gap-2 px-2">
+                                            <h3 class="h5 xl:h4 m-0 text-center m-0">
+                                                <a class='text-none' href='#'>كيفية استخدام التحليلات لتحسين أداء الأسطول</a>
+                                            </h3>
+                                            <ul class="post-meta nav-x ft-tertiary justify-center gap-1 fs-7 text-gray-400 dark:text-gray-300 d-none lg:d-flex">
+                                                <li>
+                                                    <div class="hstack gap-narrow ft-tertiary">
+                                                        <img src="../assets/images/avatars/02.png" alt="فاطمة" class="w-24px h-24px rounded-circle me-narrow">
+                                                        <a href="#" class="text-none fw-bold text-dark dark:text-white">فاطمة الزهراء</a>
+                                                    </div>
+                                                </li>
+                                                <li class="opacity-50">•</li>
+                                                <li>
+                                                    <div class="post-date hstack gap-narrow">
+                                                        <span>15 مارس، 2024</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </header>
+                                    </article>
+                                </div>
+                                <div>
+                                    <article class="post type-post panel vstack gap-2 lg:gap-3 p-2 lg:p-3 rounded-2 bg-secondary dark:bg-gray-800">
+                                        <div class="post-media panel overflow-hidden rounded">
+                                            <div class="featured-image bg-gray-25 dark:bg-gray-800 ratio ratio-3x2">
+                                                <img class="media-cover image" src="../assets/images/blog/img-03.jpg" alt="تقنيات التتبع">
+                                            </div>
+                                        </div>
+                                        <header class="panel vstack items-center gap-1 lg:gap-2 px-2">
+                                            <h3 class="h5 xl:h4 m-0 text-center m-0">
+                                                <a class='text-none' href='#'>أحدث تقنيات تتبع المركبات وفوائدها</a>
+                                            </h3>
+                                            <ul class="post-meta nav-x ft-tertiary justify-center gap-1 fs-7 text-gray-400 dark:text-gray-300 d-none lg:d-flex">
+                                                <li>
+                                                    <div class="hstack gap-narrow ft-tertiary">
+                                                        <img src="../assets/images/avatars/03.png" alt="محمد" class="w-24px h-24px rounded-circle me-narrow">
+                                                        <a href="#" class="text-none fw-bold text-dark dark:text-white">محمد العلوي</a>
+                                                    </div>
+                                                </li>
+                                                <li class="opacity-50">•</li>
+                                                <li>
+                                                    <div class="post-date hstack gap-narrow">
+                                                        <span>28 فبراير، 2024</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </header>
+                                    </article>
+                                </div>
+                            </div>
+                            <a class='uc-link fw-bold d-inline-flex items-center gap-narrow' href='#'>
+                                <span>عرض المزيد من المقالات</span>
+                                <i class="icon icon-1 unicon-arrow-left rtl:rotate-180"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section end -->
+
+    </div>
+    <!-- Wrapper end -->
+
+    <!-- Footer start -->
+    <footer id="uc-footer" class="uc-footer panel overflow-hidden uc-dark">
+        <div class="footer-outer py-4 lg:py-6 xl:py-9 dark:bg-gray-900 dark:text-white">
+            <div class="container max-w-xl">
+                <div class="footer-inner vstack gap-4 lg:gap-6 xl:gap-8">
+                    <div class="uc-footer-widgets panel">
+                        <div class="row child-cols-6 md:child-cols col-match g-4">
+                            <div class="col-12 lg:col-4">
+                                <div class="panel vstack items-start gap-4 ltr:md:pe-8 rtl:md:ps-8">
+                                    <div class="vstack gap-2">
+                                        <a href='index.html'>
+                                            <img class="w-32px text-primary" src="../assets/images/common/logo-mark.svg" alt="توموبيلا">
+                                        </a>
+                                        <p>هذه الأداة القوية تلغي الحاجة لمغادرة منصة إدارة الأسطول لإنجاز المهام حيث يمكنني إنشاء عروض مخصصة مع جداول تسعير ديناميكية.</p>
+                                    </div>
+                                    <div class="hstack items-start gap-1">
+                                        <a href="#">
+                                            <img class="text-gray-900 dark:text-white hover:text-opacity-70 transition-all duration-150" src="../assets/images/common/playstore.svg" alt="متجر جوجل بلاي" data-uc-svg>
+                                        </a>
+                                        <a href="#">
+                                            <img class="text-gray-900 dark:text-white hover:text-opacity-70 transition-all duration-150" src="../assets/images/common/appstore.svg" alt="متجر آبل" data-uc-svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="nav-y gap-1 fw-medium">
+                                    <li><a href='#'>حول</a></li>
+                                    <li><a href='page-pricing.html'>الأسعار</a></li>
+                                    <li><a href='#'>الميزات</a></li>
+                                    <li><a href='#'>التكاملات</a></li>
+                                    <li><a href='#'>الوظائف</a></li>
+                                    <li><a href='contact.html'>اتصل بنا</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="nav-y gap-1 fw-medium">
+                                    <li><a href='#'>المتجر</a></li>
+                                    <li><a href='#'>مع الشريط الجانبي</a></li>
+                                    <li><a href='#'>تفاصيل المنتج</a></li>
+                                    <li><a href='#'>السلة</a></li>
+                                    <li><a href='#'>الدفع</a></li>
+                                    <li><a href='#'>تأكيد الطلب</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="nav-y gap-1 fw-medium">
+                                    <li><a href='#'>طلب عرض توضيحي</a></li>
+                                    <li><a href='#'>تسجيل الدخول</a></li>
+                                    <li><a href='#'>إنشاء حساب</a></li>
+                                    <li><a href='#'>استعادة كلمة المرور</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="nav-y gap-1 fw-medium">
+                                    <li><a href='#'>المدونة</a></li>
+                                    <li><a href='#'>تفاصيل المدونة</a></li>
+                                    <li><a href='#'>الأسئلة الشائعة</a></li>
+                                    <li><a href='#'>404</a></li>
+                                    <li><a href='#'>قريباً</a></li>
+                                    <li><a href='#'>شروط الخدمة</a></li>
+                                    <li><a href='privacy.html'>سياسة الخصوصية</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uc-footer-bottom panel vstack lg:hstack gap-4 justify-center lg:justify-between pt-4 lg:pt-6 border-top dark:text-white">
+                        <div class="vstack sm:hstack justify-center lg:justify-start items-center lg:items-start gap-1 lg:gap-2">
+                            <p class="opacity-60">توموبيلا © 2024، جميع الحقوق محفوظة.</p>
+                            <ul class="nav-x gap-2 fw-medium">
+                                <li><a href="privacy.html">إشعار الخصوصية</a></li>
+                                <li><a href="#">القانونية</a></li>
+                                <li><a href="#">إعدادات ملفات تعريف الارتباط</a></li>
+                            </ul>
+                        </div>
+                        <div class="hstack justify-center lg:justify-end gap-2 lg:gap-3">
+                            <ul class="nav-x gap-2">
+                                <li>
+                                    <a href="#"><i class="icon icon-2 unicon-logo-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon icon-2 unicon-logo-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon icon-2 unicon-logo-x-filled"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon icon-2 unicon-logo-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon icon-2 unicon-logo-youtube"></i></a>
+                                </li>
+                            </ul>
+                            <div class="vr"></div>
+                            <div class="d-inline-block">
+                                <a href="#" class="hstack gap-1 text-none fw-medium">
+                                    <i class="icon icon-1 unicon-earth-filled"></i>
+                                    <span>العربية</span>
+                                    <span data-uc-drop-parent-icon=""></span>
+                                </a>
+                                <div class="p-2 bg-white dark:bg-gray-800 shadow-xs rounded w-150px" data-uc-drop="mode: click; offset: 28; pos: top-right; boundary: !.uc-footer-bottom; animation: uc-animation-slide-top-small; duration: 150;">
+                                    <ul class="nav-y gap-1 fw-medium items-end">
+                                        <li><a href="../en/contact.html">English</a></li>
+                                        <li><a href="contact.html">العربية</a></li>
+                                        <li><a href="../contact.html">Français</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- include jquery & bootstrap js -->
+    <script defer src="../assets/js/libs/jquery.min.js"></script>
+    <script defer src="../assets/js/libs/bootstrap.min.js"></script>
+
+    <!-- include scripts -->
+    <script defer src="../assets/js/libs/anime.min.js"></script>
+    <script defer src="../assets/js/libs/swiper-bundle.min.js"></script>
+    <script defer src="../assets/js/libs/scrollmagic.min.js"></script>
+    <script defer src="../assets/js/libs/typed.min.js"></script>
+    <script defer src="../assets/js/libs/tilt.min.js"></script>
+    <script defer src="../assets/js/libs/split-type.min.js"></script>
+    <script defer src="../assets/js/libs/prettify.min.js"></script>
+    <script defer src="../assets/js/libs/gsap.min.js"></script>
+    <script defer src="../assets/js/core/magic-cursor.js"></script>
+    <script defer src="../assets/js/helpers/data-attr-helper.js"></script>
+    <script defer src="../assets/js/helpers/swiper-helper.js"></script>
+    <script defer src="../assets/js/helpers/splitype-helper.js"></script>
+    <script defer src="../assets/js/helpers/anime-helper.js"></script>
+    <script defer src="../assets/js/helpers/typed-helper.js"></script>
+    <script defer src="../assets/js/helpers/tilt-helper.js"></script>
+    <script defer src="../assets/js/core/marquee.js"></script>
+    <script defer src="../assets/js/uikit-components-bs.js"></script>
+
+    <!-- include app script -->
+    <script defer src="../assets/js/form.js"></script>
+    <script defer src="../assets/js/app.js"></script>
+
+    <script>
+        // Schema toggle via URL
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const getSchema = urlParams.get("schema");
+        if (getSchema === "dark") {
+            setDarkMode(1);
+        } else if (getSchema === "light") {
+            setDarkMode(0);
+        }
+    </script>
+</body>
+</html>

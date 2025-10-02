@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>توموبيلا - أسطولك، تحت السيطرة بنقرة واحدة.</title>
-  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   <meta name="description"
     content="وفر الوقت دع التكنولوجيا تحررك، ركز على عملائك." />
   <meta name="keywords"
@@ -21,7 +21,7 @@
     content="وفر الوقت دع التكنولوجيا تحررك، ركز على عملائك." />
   <meta property="og:url" content="https://tomobila.com/" />
   <meta property="og:site_name" content="Tomobila" />
-  <meta property="og:image" content="assets/images/og.jpg" />
+  <meta property="og:image" content="../assets/images/og.jpg" />
   <meta property="og:image:width" content="1180" />
   <meta property="og:image:height" content="600" />
   <meta property="og:image:type" content="image/png" />
@@ -76,6 +76,9 @@
 
   <!-- include main style -->
   <link rel="stylesheet" href="../assets/css/theme/theme-four.min.purge.css" />
+  
+  <!-- include RTL styles for Arabic -->
+  <link rel="stylesheet" href="../assets/css/rtl-styles.css" />
 
   <!-- include scripts -->
   <script src="../assets/js/uni-core/js/uni-core-bundle.min.js"></script>
@@ -85,16 +88,16 @@
   class="uni-body panel uni-body panel bg-white text-tertiary-900 dark:bg-tertiary-800 dark:text-tertiary-200 overflow-x-hidden disable-cursor">
   <!--  GDPR modal -->
   <!-- <div id="uc-gdpr-notification"
-    class="uc-gdpr-notification uc-notification min-w-1/2 uc-notification-bottom-left lg:m-2">
+    class="uc-gdpr-notification uc-notification min-w-1/2 uc-notification-bottom-right lg:m-2">
     <div
       class="uc-notification-message vstack lg:hstack items-end gap-2 lg:gap-4 lg:p-3 bg-white text-dark border rounded-1-5 min-w-1/2">
       <a id="uc-close-gdpr-notification" class="uc-notification-close text-dark" data-uc-close></a>
       <div class="vstack">
         <h2 class="h5 ft-primary fw-bold -ls-1 m-0 text-dark">الامتثال للائحة العامة لحماية البيانات</h2>
         <p class="fs-6 mt-1">نحن نستخدم ملفات تعريف الارتباط لضمان أفضل تجربة لك على موقعنا الإلكتروني. من خلال الاستمرار في استخدام موقعنا، فإنك توافق على استخدامنا لملفات تعريف الارتباط،
-          <a class="uc-link text-underline" href="page-privacy.html">سياسة الخصوصية</a>
-          و
-          <a class="uc-link text-underline" href="page-terms.html">شروط الاستخدام</a>.
+          <a class="uc-link text-underline" href="privacy.html">سياسة الخصوصية</a>
+                        و
+                        <a class="uc-link text-underline" href="contact.html">شروط الاستخدام</a>.
         </p>
       </div>
       <button class="btn btn-sm btn-primary px-2" id="uc-accept-gdpr">قبول</button>
@@ -166,7 +169,7 @@
       <header class="uc-offcanvas-header hstack justify-between items-center pb-2 bg-white dark:bg-gray-900">
         <div class="uc-logo">
           <a class="h5 text-none text-gray-900 dark:text-white" href="index.html">
-            <img class="w-32px" src="../assets/images/favicon.svg" alt="توموبيلا" />
+            <img class="w-32px" src="../favicon.ico" alt="توموبيلا" />
           </a>
         </div>
         <button
@@ -178,17 +181,17 @@
 
       <div class="panel">
         <ul class="nav-y gap-narrow fw-medium fs-6" data-uc-nav>
-          <li><a href="page-features.html">الميزات</a></li>
-          <li><a href="page-pricing.html">الأسعار</a></li>
-          <li><a href="page-contact.html">اتصل بنا</a></li>
+          <li><a href="#">الميزات</a></li>
+                            <li><a href="pricing.html">الأسعار</a></li>
+                            <li><a href="contact.html">اتصل بنا</a></li>
           <li class="uc-parent">
             <ul class="uc-nav-sub" data-uc-nav="">
               <li class="uc-parent">
                 <a href="index.html#">صفحات أخرى</a>
                 <ul class="uc-nav-sub">
-                  <li><a href="page-faq.html">الأسئلة الشائعة</a></li>
-                  <li><a href="page-terms.html">شروط الاستخدام</a></li>
-                  <li><a href="page-privacy.html">سياسة الخصوصية</a></li>
+                  <li><a href="#">الأسئلة الشائعة</a></li>
+                            <li><a href="contact.html">شروط الاستخدام</a></li>
+                            <li><a href="privacy.html">سياسة الخصوصية</a></li>
                 </ul>
               </li>
             </ul>
@@ -224,28 +227,36 @@
                 </a>
               </div>
             </div>
-            <div class="uc-navbar-center">
-              <ul class="uc-navbar-nav fs-5 gap-3 lg:gap-4 d-none lg:d-flex">
-                <li><a href="page-features.html">الميزات</a></li>
-                <li><a href="page-pricing.html">الأسعار</a></li>
-                <li><a href="page-contact.html">اتصل بنا</a></li>
+            <div class="uc-navbar-center d-none md:d-flex text-white">
+              <ul class="uc-navbar-nav gap-4 xl:gap-5 d-flex fs-5 fw-bold" style="--uc-nav-height: 48px"
+                data-uc-scrollspy-nav="closest: li; offset: 40; scroll: true">
+                <li>
+                  <a href="#" class="hover:text-white duration-150">الميزات</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white duration-150">الأسعار</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white duration-150">المدونة</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white duration-150">حول</a>
+                </li>
               </ul>
             </div>
             <div class="uc-navbar-right">
-              <a
-                class="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex"
-                href="#uc-newsletter-modal"
+              <a class="btn btn-sm btn-primary text-white text-none d-none md:d-inline-flex" href="#uc-newsletter-modal"
                 data-uc-toggle>
-                ابدأ التجربة المجانية
+                تجربة مجانية
               </a>
-              <a
-                class="btn btn-md btn-tertiary dark:bg-white dark:text-dark border fs-5 lg:px-3 d-none lg:d-inline-flex shadow-xs"
-                href="https://app.tomobila.com"
-                target="_blank">
+              
+              <a class="btn btn-md btn-tertiary dark:bg-white dark:text-dark border fs-5 lg:px-3 d-none lg:d-inline-flex shadow-xs hover:bg-tertiary-600 duration-150"
+                href="https://app.tomobila.com" target="_blank">
                 تسجيل الدخول
               </a>
+              
               <div class="d-inline-block">
-                <a href="/" class="hstack gap-narrow text-none fw-medium text-black"
+                <a href="/ar/" class="hstack gap-narrow text-none fw-medium text-white"
                   >العربية<span data-uc-drop-parent-icon></span
                 ></a>
                 <div
@@ -257,10 +268,9 @@
                   </ul>
                 </div>
               </div>
-              <a
-                class="btn btn-md btn-tertiary w-48px h-48px d-inline-flex lg:d-none"
-                href="index.html#uc-menu-panel"
-                data-uc-toggle>
+
+              <a class="btn btn-md btn-tertiary w-48px h-48px d-flex md:d-none" href="index.html#uc-menu-panel"
+                data-uc-toggle="" role="button" aria-label="فتح قائمة التنقل" aria-expanded="false">
                 <i class="icon icon-2 unicon-menu"></i>
               </a>
             </div>
@@ -293,16 +303,17 @@
                   <div class="panel vstack justify-center items-center gap-2 px-2 pt-4 text-center">
                     <h1 class="h2 md:h1 lg:display-5 m-0 mt-2"
                       data-anime="translateY: [10, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 450; delay: 250;">
-                      <span class="text-tertiary dark:text-primary" data-uc-splitext="types: 's'"
+                      
+                      <span class="text-tertiary dark:text-primary" data-uc-splitext="types: 'chars'"
                         data-anime="targets: > *; translateY: [-5, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 250; delay: anime.stagger(50);">
-                        أقل أوراق،
+                        وكالة التأجير
                       </span>
-                      المزيد من العقود. أتمتة إدارة مركباتك.
+                      الخاصة بك بدون أوراق!
                       <br class="d-none lg:d-block" />
                     </h1>
                     <p class="fs-6 xl:fs-3 xl:px-10 dark:text-white text-opacity-70" data-uc-splitext="types: 'words'"
                       data-anime="targets: > *; translateX: [5, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 450; delay: anime.stagger(50, {start:650});">
-                      حوّل إدارة وكالتك مع توموبيلا.
+                      مع توموبيلا، أدر مركباتك بسهولة، تابع عملاءك وعقودك، ووفر الوقت كل يوم.
                     </p>
                     <div class="vstack md:hstack justify-center gap-1 my-1 lg:my-3"
                       data-anime="translateY: [24, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 750; delay: 750;">
@@ -324,6 +335,247 @@
     </div>
 
     <!-- Section end -->
+
+      <!-- Pricing Section -->
+      <div id="pricing" class="pricing section panel overflow-hidden">
+        <div
+          class="section-outer panel py-6 xl:py-10 lg:mx-2 mt-2 rounded-2 xl:rounded-3 bg-gray-800 dark:bg-gray-300 dark:bg-opacity-15 text-white"
+          data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 200;"
+          style="transform: translateY(0px); opacity: 1;">
+          <div class="container">
+            <div class="section-inner panel">
+              <div class="pricing-tables panel vstack justify-center items-center gap-4 sm:gap-6 xl:gap-8"
+                data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});">
+                <div class="section-header vstack items-center gap-2 lg:gap-3"
+                  style="transform: translateY(0px); opacity: 1;">
+                  <h2 class="h3 md:h1 lg:display-5 m-0 text-center max-w-650px mx-auto text-white">أسعار سلسة وخطط قابلة للتوسع</h2>
+                </div>
+                <div class="panel w-100" style="transform: translateY(0px); opacity: 1;">
+                  <ul
+                    class="uc-subnav uc-subnav-pill gap-1 uc-child-width-expand rounded-1-5 p-narrow max-w-xs mx-auto border"
+                    data-uc-switcher="swiping: false;" role="tablist">
+                    <li class="uc-active" role="presentation">
+                      <a class="d-flex justify-center text-white" href="#" aria-selected="true" role="tab"
+                        id="uc-switcher-23" aria-controls="uc-switcher-24">دفع شهري</a>
+                    </li>
+                    <li role="presentation">
+                      <a class="d-flex justify-center text-white" href="#" aria-selected="false" tabindex="-1"
+                        role="tab" id="uc-switcher-25" aria-controls="uc-switcher-26">دفع سنوي</a>
+                      <img
+                        class="position-absolute top-50 start-100 translate-middle-y mt-n3 ltr:ms-2 rtl:me-2 text-tertiary d-none md:d-block"
+                        src="../assets/images/template/50_off.svg" alt="خصم 50%" data-uc-svg="" hidden="">
+                    </li>
+                  </ul>
+                  <div class="uc-switcher mt-4 lg:mt-6" role="presentation">
+                    <li class="uc-active" id="uc-switcher-24" role="tabpanel" aria-labelledby="uc-switcher-23">
+                      <div
+                        class="swiper overflow-unset lg:overflow-hidden swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden"
+                        data-uc-swiper="items: 1.1; gap: 8; center: true; center-bounds: true;"
+                        data-uc-swiper-s="items: 2.1; gap: 16;" data-uc-swiper-m="items: 3; gap: 16;"
+                        data-uc-swiper-l="items: 3; gap: 24;">
+                        <div class="swiper-wrapper" id="swiper-wrapper-182f47aa5bc611096" aria-live="polite"
+                          style="transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(0px, 0px, 0px);">
+                          <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-prev"
+                            style="width: 413.333px; margin-right: 24px;" role="group" aria-label="1 / 3">
+                            <div
+                              class="pricing-box panel p-2 md:p-3 lg:p-4 xl:p-5 vstack items-center rounded-1-5 lg:rounded-2 text-center bg-gray-300 bg-opacity-15 text-white">
+                              <span
+                                class="pricing-box-title fs-6 fw-bold py-narrow px-2 border rounded-pill mb-2">المبتدئ</span>
+                              <p class="pricing-box-desc opacity-70">للأفراد والمستقلين</p>
+                              <div class="pricing-box-price hstack justify-center gap-narrow mt-2">
+                                <h4 class="price h1 lg:display-5 m-0 text-inherit">$24</h4>
+                                <span class="duration fs-7 opacity-70">/ شهر</span>
+                              </div>
+                              <p class="pricing-box-bill fs-7 opacity-70">يُدفع مرة واحدة سنوياً</p>
+                              <hr>
+                              <ul class="nav-y items-center gap-1 fs-6">
+                                <li class="mb-1">الميزات البارزة</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> سريع وموثوق</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> اكتشف البيانات في كل مكان</li>
+                              </ul>
+                              <div class="pricing-box-cta vstack gap-1 justify-center text-center mt-4">
+                                <a class="btn btn-md btn-secondary w-100" href="/html/lexend/main/sign-up">جرب مجاناً</a>
+                                <span class="fs-7 opacity-70">لا حاجة لبطاقة ائتمان!</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active"
+                            style="width: 413.333px; margin-right: 24px;" role="group" aria-label="2 / 3">
+                            <div
+                              class="pricing-box panel p-2 md:p-3 lg:p-4 xl:p-5 vstack items-center rounded-1-5 lg:rounded-2 text-center bg-secondary text-dark shadow-xs">
+                              <span
+                                class="pricing-box-title fs-6 fw-bold py-narrow px-2 border rounded-pill mb-2">المحترف</span>
+                              <p class="pricing-box-desc opacity-70">للشركات الناشئة والوكالات</p>
+                              <div class="pricing-box-price hstack justify-center gap-narrow mt-2">
+                                <h4 class="price h1 lg:display-5 m-0 text-inherit">$48</h4>
+                                <span class="duration fs-7 opacity-70">/ شهر</span>
+                              </div>
+                              <p class="pricing-box-bill fs-7 opacity-70">يُدفع مرة واحدة سنوياً</p>
+                              <hr>
+                              <ul class="nav-y items-center gap-1 fs-6">
+                                <li class="mb-1">الميزات البارزة</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> سريع وموثوق</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> اكتشف البيانات في كل مكان</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> إثراء البيانات بالسياق</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> إدارة المخاطر</li>
+                              </ul>
+                              <div class="pricing-box-cta vstack gap-1 justify-center text-center mt-4">
+                                <a class="btn btn-md btn-primary border" href="/html/lexend/main/sign-up">جرب مجاناً</a>
+                                <span class="fs-7 opacity-70">لا حاجة لبطاقة ائتمان!</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide swiper-slide-visible swiper-slide-next" role="group"
+                            aria-label="3 / 3" style="width: 413.333px; margin-right: 24px;">
+                            <div
+                              class="pricing-box panel p-2 md:p-3 lg:p-4 xl:p-5 vstack items-center rounded-1-5 lg:rounded-2 text-center bg-gray-300 bg-opacity-15 text-white">
+                              <span
+                                class="pricing-box-title fs-6 fw-bold py-narrow px-2 border rounded-pill mb-2">الأعمال</span>
+                              <p class="pricing-box-desc opacity-70">للشركات الكبيرة والمؤسسات</p>
+                              <div class="pricing-box-price hstack justify-center gap-narrow mt-2">
+                                <h4 class="price h1 lg:display-5 m-0 text-inherit">$64</h4>
+                                <span class="duration fs-7 opacity-70">/ شهر</span>
+                              </div>
+                              <p class="pricing-box-bill fs-7 opacity-70">يُدفع مرة واحدة سنوياً</p>
+                              <hr>
+                              <ul class="nav-y items-center gap-1 fs-6">
+                                <li class="mb-1">الميزات البارزة</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> سريع وموثوق</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> اكتشف البيانات في كل مكان</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> إثراء البيانات بالسياق</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> إدارة المخاطر</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> الامتثال للخصوصية</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> إدارة الطرف الثالث</li>
+                              </ul>
+                              <div class="pricing-box-cta vstack items-center gap-2 justify-center text-center mt-4">
+                                <a class="btn btn-md btn-secondary w-100" href="/html/lexend/main/page-contact-2">تواصل معنا</a>
+                                <a href="#" class="uc-link fs-7 fw-medium border-bottom text-secondary">اعرف المزيد</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                      </div>
+                    </li>
+                    <li id="uc-switcher-26" role="tabpanel" aria-labelledby="uc-switcher-25">
+                      <div
+                        class="swiper overflow-unset lg:overflow-hidden swiper-initialized swiper-horizontal swiper-watch-progress"
+                        data-uc-swiper="items: 1.1; gap: 8; center: true; center-bounds: true;"
+                        data-uc-swiper-s="items: 2.1; gap: 16;" data-uc-swiper-m="items: 3; gap: 16;"
+                        data-uc-swiper-l="items: 3; gap: 24;">
+                        <div class="swiper-wrapper" id="swiper-wrapper-495b1568b8ef50b7" aria-live="polite"
+                          style="transition-duration: 0ms; transition-delay: 0ms;">
+                          <div class="swiper-slide">
+                            <div
+                              class="pricing-box panel p-2 md:p-3 lg:p-4 xl:p-5 vstack items-center rounded-1-5 lg:rounded-2 text-center bg-gray-300 bg-opacity-15 text-white">
+                              <span
+                                class="pricing-box-title fs-6 fw-bold py-narrow px-2 border rounded-pill mb-2">المبتدئ</span>
+                              <p class="pricing-box-desc opacity-70">للأفراد والمستقلين</p>
+                              <div class="pricing-box-price hstack justify-center gap-narrow mt-2">
+                                <h4 class="price h1 lg:display-5 m-0 text-inherit">$12</h4>
+                                <span class="duration fs-7 opacity-70">/ شهر</span>
+                              </div>
+                              <p class="pricing-box-bill fs-7 opacity-70">يُدفع مرة واحدة سنوياً</p>
+                              <hr>
+                              <ul class="nav-y items-center gap-1 fs-6">
+                                <li class="mb-1">الميزات البارزة</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> سريع وموثوق</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> اكتشف البيانات في كل مكان</li>
+                              </ul>
+                              <div class="pricing-box-cta vstack gap-1 justify-center text-center mt-4">
+                                <a class="btn btn-md btn-secondary w-100" href="/html/lexend/main/sign-up">جرب مجاناً</a>
+                                <span class="fs-7 opacity-70">لا حاجة لبطاقة ائتمان!</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div
+                              class="pricing-box panel p-2 md:p-3 lg:p-4 xl:p-5 vstack items-center rounded-1-5 lg:rounded-2 text-center bg-secondary text-dark shadow-xs">
+                              <span
+                                class="pricing-box-title fs-6 fw-bold py-narrow px-2 border rounded-pill mb-2">المحترف</span>
+                              <p class="pricing-box-desc opacity-70">للشركات الناشئة والوكالات</p>
+                              <div class="pricing-box-price hstack justify-center gap-narrow mt-2">
+                                <h4 class="price h1 lg:display-5 m-0 text-inherit">$24</h4>
+                                <span class="duration fs-7 opacity-70">/ شهر</span>
+                              </div>
+                              <p class="pricing-box-bill fs-7 opacity-70">يُدفع مرة واحدة سنوياً</p>
+                              <hr>
+                              <ul class="nav-y items-center gap-1 fs-6">
+                                <li class="mb-1">الميزات البارزة</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> سريع وموثوق</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> اكتشف البيانات في كل مكان</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> إثراء البيانات بالسياق</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> إدارة المخاطر</li>
+                              </ul>
+                              <div class="pricing-box-cta vstack gap-1 justify-center text-center mt-4">
+                                <a class="btn btn-md btn-primary border" href="/html/lexend/main/sign-up">جرب مجاناً</a>
+                                <span class="fs-7 opacity-70">لا حاجة لبطاقة ائتمان!</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div
+                              class="pricing-box panel p-2 md:p-3 lg:p-4 xl:p-5 vstack items-center rounded-1-5 lg:rounded-2 text-center bg-gray-300 bg-opacity-15 text-white">
+                              <span
+                                class="pricing-box-title fs-6 fw-bold py-narrow px-2 border rounded-pill mb-2">الأعمال</span>
+                              <p class="pricing-box-desc opacity-70">للشركات الكبيرة والمؤسسات</p>
+                              <div class="pricing-box-price hstack justify-center gap-narrow mt-2">
+                                <h4 class="price h1 lg:display-5 m-0 text-inherit">$32</h4>
+                                <span class="duration fs-7 opacity-70">/ شهر</span>
+                              </div>
+                              <p class="pricing-box-bill fs-7 opacity-70">يُدفع مرة واحدة سنوياً</p>
+                              <hr>
+                              <ul class="nav-y items-center gap-1 fs-6">
+                                <li class="mb-1">الميزات البارزة</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> سريع وموثوق</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> اكتشف البيانات في كل مكان</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> إثراء البيانات بالسياق</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> إدارة المخاطر</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> الامتثال للخصوصية</li>
+                                <li><i class="icon icon-narrow unicon-checkmark fw-bold ltr:me-1 rtl:ms-1"></i> إدارة الطرف الثالث</li>
+                              </ul>
+                              <div class="pricing-box-cta vstack items-center gap-2 justify-center text-center mt-4">
+                                <a class="btn btn-md btn-secondary w-100" href="/html/lexend/main/page-contact-2">تواصل معنا</a>
+                                <a href="#" class="uc-link fs-7 fw-medium border-bottom text-secondary">اعرف المزيد</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                      </div>
+                    </li>
+                  </div>
+                  <p class="text-center mt-4 lg:mt-6 ">*خصم سنوي متاح على خطط مختارة.</p>
+                </div>
+                <div class="panel w-100 max-w-lg" style="transform: translateY(0px); opacity: 1;">
+                  <div class="row child-cols col-match items-center justify-center text-center gy-4 lg:gy-8"
+                    data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});">
+                    <div style="transform: translateY(0px); opacity: 1;">
+                      <div class="fact-item panel vstack gap-1">
+                        <h5 class="h3 md:h2 lg:h1 xl:display-5 m-0 text-tertiary">280+</h5>
+                        <p class="fw-medium">تتبع العملاء المحتملين</p>
+                      </div>
+                    </div>
+                    <div style="transform: translateY(0px); opacity: 1;">
+                      <div class="fact-item panel vstack gap-1">
+                        <h5 class="h3 md:h2 lg:h1 xl:display-5 m-0 text-tertiary">90%</h5>
+                        <p class="fw-medium">المستخدمون الراضون</p>
+                      </div>
+                    </div>
+                    <div style="transform: translateY(0px); opacity: 1;">
+                      <div class="fact-item panel vstack gap-1">
+                        <h5 class="h3 md:h2 lg:h1 xl:display-5 m-0 text-tertiary">10.2k</h5>
+                        <p class="fw-medium">تعاونات الفريق</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Pricing Section End -->
 
     <!-- Section start -->
     <div id="companies_sponsores" class="companies-sponsores section panel overflow-hidden">
@@ -395,9 +647,9 @@
               data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});">
             <h2 class="h3 md:h2 lg:display-5">
               <span class="text-tertiary dark:text-primary">
-                بسّط نشاط تأجير 
+                بسّط
               </span>
-              مركباتك بنظام شامل
+              عملك
             </h2>
             
             <p>
@@ -580,7 +832,7 @@
                         <img class="w-24px xl:w-28px"
                           src="https://cdn.prod.website-files.com/5f0fa4521806fc7695679c1c/6722f3b6673e71d936875812_verified_user_24dp_151466.svg"
                           alt="feature-icon" />
-                        <span class="ml-2">
+                        <span class="mr-2">
                           أدر أسطولك بذكاء
                         </span>
                       </h3>
@@ -600,7 +852,7 @@
                         <img class="w-24px xl:w-28px"
                           src="https://cdn.prod.website-files.com/5f0fa4521806fc7695679c1c/6722f3c6673e71d936875a1a_smartphone_24dp_151466.svg"
                           alt="feature-icon" />
-                        <span class="ml-2">
+                        <span class="mr-2">
                           حجوزات عبر الهاتف المحمول
                         </span>
                       </h3>
@@ -620,7 +872,7 @@
                         <img class="w-24px xl:w-28px"
                           src="https://cdn.prod.website-files.com/5f0fa4521806fc7695679c1c/6722f3d6673e71d936875b5c_analytics_24dp_151466.svg"
                           alt="feature-icon" />
-                        <span class="ml-2">
+                        <span class="mr-2">
                           تحليلات متقدمة
                         </span>
                       </h3>
@@ -640,7 +892,7 @@
                         <img class="w-24px xl:w-28px"
                           src="https://cdn.prod.website-files.com/5f0fa4521806fc7695679c1c/6722f3e6673e71d936875c9e_security_24dp_151466.svg"
                           alt="feature-icon" />
-                        <span class="ml-2">
+                        <span class="mr-2">
                           أمان متقدم
                         </span>
                       </h3>
@@ -660,7 +912,7 @@
                         <img class="w-24px xl:w-28px"
                           src="https://cdn.prod.website-files.com/5f0fa4521806fc7695679c1c/6722f3f6673e71d936875de0_support_agent_24dp_151466.svg"
                           alt="feature-icon" />
-                        <span class="ml-2">
+                        <span class="mr-2">
                           دعم على مدار الساعة
                         </span>
                       </h3>
@@ -680,12 +932,112 @@
                         <img class="w-24px xl:w-28px"
                           src="https://cdn.prod.website-files.com/5f0fa4521806fc7695679c1c/6722f406673e71d936875f22_integration_instructions_24dp_151466.svg"
                           alt="feature-icon" />
-                        <span class="ml-2">
+                        <span class="mr-2">
                           تكامل سهل
                         </span>
                       </h3>
                       <p class="desc fs-7 opacity-70">
                         اتصال سلس مع أنظمتك الحالية
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="order-7 lg:order-6">
+                <div class="features-item vstack items-center justify-center text-center gap-4">
+                  <div class="panel">
+                    <div class="vstack gap-1">
+                      <h3 class="title h6 lg:h5 m-0">
+                        <img class="w-24px xl:w-28px"
+                          src="https://cdn.prod.website-files.com/5f0fa4521806fc7695679c1c/6722f3b6673e71d936875812_verified_user_24dp_151466.svg"
+                          alt="feature-icon" />
+                        <span class="mr-2">
+                          التوقيع الرقمي
+                        </span>
+                      </h3>
+                      <p class="desc fs-7 opacity-70">
+                        وقع العقود والوثائق إلكترونياً بأمان وسهولة
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="order-8 lg:order-7">
+                <div class="features-item vstack items-center justify-center text-center gap-4">
+                  <div class="panel">
+                    <div class="vstack gap-1">
+                      <h3 class="title h6 lg:h5 m-0">
+                        <img class="w-24px xl:w-28px"
+                          src="https://cdn.prod.website-files.com/5f0fa4521806fc7695679c1c/6722f3b6673e71d936875812_verified_user_24dp_151466.svg"
+                          alt="feature-icon" />
+                        <span class="mr-2">
+                          تتبع المصروفات
+                        </span>
+                      </h3>
+                      <p class="desc fs-7 opacity-70">
+                        تتبع جميع مصروفاتك في مختلف الخدمات ومجالات عملك
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="order-9 lg:order-8">
+                <div class="features-item vstack items-center justify-center text-center gap-4">
+                  <div class="panel">
+                    <div class="vstack gap-1">
+                      <h3 class="title h6 lg:h5 m-0">
+                        <img class="w-24px xl:w-28px"
+                          src="https://cdn.prod.website-files.com/5f0fa4521806fc7695679c1c/6722f3b6673e71d936875812_verified_user_24dp_151466.svg"
+                          alt="feature-icon" />
+                        <span class="mr-2">
+                          تقارير الأضرار والصور
+                        </span>
+                      </h3>
+                      <p class="desc fs-7 opacity-70">
+                        اسمح للسائقين ومديري الأسطول بالإبلاغ عن أضرار المركبات بسهولة مع الصور والأوصاف التفصيلية
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="order-10 lg:order-9">
+                <div class="features-item vstack items-center justify-center text-center gap-4">
+                  <div class="panel">
+                    <div class="vstack gap-1">
+                      <h3 class="title h6 lg:h5 m-0">
+                        <img class="w-24px xl:w-28px"
+                          src="https://cdn.prod.website-files.com/5f0fa4521806fc7695679c1c/6722f3b6673e71d936875812_verified_user_24dp_151466.svg"
+                          alt="feature-icon" />
+                        <span class="mr-2">
+                          تصدير مستندات NARSA بسهولة
+                        </span>
+                      </h3>
+                      <p class="desc fs-7 opacity-70">
+                        احتفظ بسجل لجميع مصروفاتك في مختلف الخدمات ومجالات شركتك
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="order-11 lg:order-10">
+                <div class="features-item vstack items-center justify-center text-center gap-4">
+                  <div class="panel">
+                    <div class="vstack gap-1">
+                      <h3 class="title h6 lg:h5 m-0">
+                        <img class="w-24px xl:w-28px"
+                          src="https://cdn.prod.website-files.com/5f0fa4521806fc7695679c1c/6722f3b6673e71d936875812_verified_user_24dp_151466.svg"
+                          alt="feature-icon" />
+                        <span class="mr-2">
+                          عرض شامل للوحة التحكم
+                        </span>
+                      </h3>
+                      <p class="desc fs-7 opacity-70">
+                        اطلع على جميع بياناتك المالية الرئيسية في مكان واحد، من الإيرادات والمصروفات إلى التوقعات والإسقاطات
                       </p>
                     </div>
                   </div>
@@ -873,6 +1225,132 @@
     <!-- Section end -->
 
     <!-- Section start -->
+    <div id="testimonials" class="testimonials section panel overflow-hidden">
+      <div class="section-outer panel py-6 md:py-8 xl:py-10">
+        <div class="container max-w-lg">
+          <div class="section-inner panel">
+            <div class="panel vstack items-center gap-4 sm:gap-6 xl:gap-8 text-center"
+              data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});">
+              <div class="section-header vstack items-center gap-2 lg:gap-3">
+                <span class="fs-7 fw-medium py-narrow px-2 border rounded-pill">
+                  شهادات العملاء
+                </span>
+                <h2 class="h4 sm:h3 lg:h2 m-0 text-center max-w-650px mx-auto">
+                  لم يتم
+                  <span class="text-tertiary dark:text-primary">
+                    دفع أي مبلغ
+                  </span>
+                  لنشر هذه الشهادات،
+                  <br />
+                </h2>
+                <p class="fs-5 lg:fs-4">
+                  ولا ندفع رسوم إحالة أو عمولات
+                </p>
+              </div>
+              <div class="panel w-100">
+                <div class="swiper overflow-unset"
+                  data-uc-swiper="items: 1.25; active: 1; gap: 16; center: true; center-bounds: true;"
+                  data-uc-swiper-l="items: 4; gap: 24; center: false; center-bounds: false;">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="px-3 sm:px-4 py-4 panel vstack justify-between gap-3 rounded-2 bg-secondary dark:bg-tertiary-700">
+                        <div class="panel vstack items-start gap-2">
+                          <p class="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">
+                            "نحن نبحث عن أشخاص يشاركوننا الرؤية! كان معظم وقتنا يُستهلك في الأعمال الإدارية البديلة، أما الآن فيمكننا التركيز على البناء لمساعدة موظفينا."
+                          </p>
+                        </div>
+                        <div class="panel hstack gap-2 mt-2">
+                          <img class="w-40px rounded-circle" src="../assets/images/avatars/01.png" alt="مارك زيلرز" />
+                          <div class="panel vstack justify-center gap-narrow">
+                            <ul class="nav-x gap-0 text-warning">
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                            </ul>
+                            <span class="fw-bold ft-secondary m-0">مارك زيلرز</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="px-3 sm:px-4 py-4 panel vstack justify-between gap-3 rounded-2 bg-secondary dark:bg-tertiary-700">
+                        <div class="panel vstack items-start gap-2">
+                          <p class="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">
+                            "هذه الأداة القوية تلغي الحاجة لمغادرة Salesforce لإنجاز المهام، حيث يمكنني إنشاء عرض مخصص بجداول تسعير ديناميكية والحصول على موافقة مديري خلال 36 دقيقة."
+                          </p>
+                        </div>
+                        <div class="panel hstack gap-2 mt-2">
+                          <img class="w-40px rounded-circle" src="../assets/images/avatars/04.png" alt="ناتاليا لارسون" />
+                          <div class="panel vstack justify-center gap-narrow">
+                            <ul class="nav-x gap-0 text-warning">
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                            </ul>
+                            <span class="fw-bold ft-secondary m-0">ناتاليا لارسون</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="px-3 sm:px-4 py-4 panel vstack justify-between gap-3 rounded-2 bg-secondary dark:bg-tertiary-700">
+                        <div class="panel vstack items-start gap-2">
+                          <p class="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">
+                            "نحن مقرنا في أوروبا ولائحة حماية البيانات الجديدة تجبرنا على البحث عن موردي خدمات يلتزمون بهذه اللائحة، وعندما نظرنا لإنشاء موقعنا وجدنا هذا المنشئ رائعاً!"
+                          </p>
+                        </div>
+                        <div class="panel hstack gap-2 mt-2">
+                          <img class="w-40px rounded-circle" src="../assets/images/avatars/03.png" alt="سارة إدريسي" />
+                          <div class="panel vstack justify-center gap-narrow">
+                            <ul class="nav-x gap-0 text-warning">
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                            </ul>
+                            <span class="fw-bold ft-secondary m-0">سارة إدريسي</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="px-3 sm:px-4 py-4 panel vstack justify-between gap-3 rounded-2 bg-secondary dark:bg-tertiary-700">
+                        <div class="panel vstack items-start gap-2">
+                          <p class="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">
+                            "نحن نبحث عن أشخاص يشاركوننا الرؤية! كان معظم وقتنا يُستهلك في الأعمال الإدارية البديلة، أما الآن فيمكننا التركيز على البناء لمساعدة موظفينا."
+                          </p>
+                        </div>
+                        <div class="panel hstack gap-2 mt-2">
+                          <img class="w-40px rounded-circle" src="../assets/images/avatars/08.png" alt="آنا يون" />
+                          <div class="panel vstack justify-center gap-narrow">
+                            <ul class="nav-x gap-0 text-warning">
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                              <li><i class="icon icon-narrow unicon-star-filled"></i></li>
+                            </ul>
+                            <span class="fw-bold ft-secondary m-0">آنا يون</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section end -->
+
+    <!-- Section start -->
     <div class="panel overflow-hidden section">
       <div class="section-outer panel py-6 md:py-8 xl:py-10">
         <div class="container">
@@ -906,6 +1384,116 @@
                     </div>
                 </div>
             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section end -->
+
+    <!-- Section start -->
+    <div id="faq" class="faq section panel overflow-hidden">
+      <div class="section-outer panel py-6 md:py-8 xl:py-10">
+        <div class="container max-w-lg">
+          <div class="section-inner panel">
+            <div class="panel vstack items-center gap-4 sm:gap-6 xl:gap-8 text-center"
+              data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});">
+              <div class="section-header vstack items-center gap-2 lg:gap-3">
+                <span class="fs-7 fw-medium py-narrow px-2 border rounded-pill">
+                  الأسئلة الشائعة
+                </span>
+                <h2 class="h4 sm:h3 lg:h2 m-0 text-center max-w-650px mx-auto">
+                  الأسئلة الشائعة!
+                </h2>
+                <p class="fs-5 lg:fs-4">
+                  إجابات على أكثر الأسئلة شيوعاً حول تومبيلا
+                </p>
+              </div>
+              <div class="panel w-100">
+                <div class="accordion-wrapper max-w-800px mx-auto">
+                  <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item border-0 rounded-2 mb-3">
+                      <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button collapsed bg-secondary dark:bg-gray-800 rounded-2 fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                          هل أحتاج إلى معرفة البرمجة؟
+                        </button>
+                      </h2>
+                      <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body bg-secondary dark:bg-gray-800 rounded-bottom-2 pt-0">
+                          <p class="text-dark dark:text-white text-opacity-70">
+                            لا، لا تحتاج إلى أي معرفة بالبرمجة. تومبيلا مصمم ليكون سهل الاستخدام للجميع، من المبتدئين إلى الخبراء في إدارة الأساطيل.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border-0 rounded-2 mb-3">
+                      <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed bg-secondary dark:bg-gray-800 rounded-2 fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                          هل يمكنني استخدامه للمشاريع التجارية؟
+                        </button>
+                      </h2>
+                      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body bg-secondary dark:bg-gray-800 rounded-bottom-2 pt-0">
+                          <p class="text-dark dark:text-white text-opacity-70">
+                            نعم، تومبيلا مصمم خصيصاً للاستخدام التجاري. يمكنك استخدامه لإدارة أسطول شركتك أو وكالة تأجير السيارات الخاصة بك.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border-0 rounded-2 mb-3">
+                      <h2 class="accordion-header" id="faq3">
+                        <button class="accordion-button collapsed bg-secondary dark:bg-gray-800 rounded-2 fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                          ما هي خيارات الدعم المتاحة؟
+                        </button>
+                      </h2>
+                      <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body bg-secondary dark:bg-gray-800 rounded-bottom-2 pt-0">
+                          <p class="text-dark dark:text-white text-opacity-70">
+                            نقدم دعماً شاملاً عبر البريد الإلكتروني والدردشة المباشرة والهاتف. فريق الدعم متاح 24/7 لمساعدتك في أي استفسار.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border-0 rounded-2 mb-3">
+                      <h2 class="accordion-header" id="faq4">
+                        <button class="accordion-button collapsed bg-secondary dark:bg-gray-800 rounded-2 fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                          هل يمكنني تخصيص النظام حسب احتياجاتي؟
+                        </button>
+                      </h2>
+                      <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body bg-secondary dark:bg-gray-800 rounded-bottom-2 pt-0">
+                          <p class="text-dark dark:text-white text-opacity-70">
+                            نعم، تومبيلا يوفر خيارات تخصيص واسعة لتناسب احتياجات عملك الخاصة. يمكنك تخصيص الحقول والتقارير والواجهات.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border-0 rounded-2 mb-3">
+                      <h2 class="accordion-header" id="faq5">
+                        <button class="accordion-button collapsed bg-secondary dark:bg-gray-800 rounded-2 fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                          ما هي طرق الدفع المقبولة؟
+                        </button>
+                      </h2>
+                      <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body bg-secondary dark:bg-gray-800 rounded-bottom-2 pt-0">
+                          <p class="text-dark dark:text-white text-opacity-70">
+                            نقبل جميع بطاقات الائتمان الرئيسية، التحويلات البنكية، وPayPal. جميع المدفوعات آمنة ومشفرة.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel mt-6 lg:mt-8">
+                  <div class="panel p-4 lg:p-6 bg-secondary dark:bg-gray-800 rounded-2 text-center">
+                    <h3 class="h5 lg:h4 m-0 mb-2">لا تزال لديك أسئلة؟</h3>
+                    <p class="fs-6 opacity-70 mb-4">تواصل معنا وسنكون سعداء لمساعدتك</p>
+                    <a class="btn btn-md btn-primary text-white" href="#contact">
+                      تواصل معنا
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
